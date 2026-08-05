@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações - Smart Control</title>
+</head>
+
+<body>
+
+    <header>
+        <img
+            src="assets/images/logo.png"
+            alt="Logo do sistema Smart Control"
+            width="150">
+
+        <h1>SMART CONTROL</h1>
+        <h2>Configurações</h2>
+    </header>
+
+    <main>
+
+        <h3>Preferências do Sistema</h3>
+
+        <form>
+
+            <p>
+                <label for="idioma">Idioma:</label><br>
+
+                <select id="idioma" name="idioma">
+                    <option value="pt-br">Português</option>
+                    <option value="en">Inglês</option>
+                    <option value="es">Espanhol</option>
+                </select>
+            </p>
+
+            <p>
+                <input
+                    type="checkbox"
+                    id="notificacoes"
+                    name="notificacoes">
+
+                <label for="notificacoes">
+                    Receber notificações do sistema
+                </label>
+            </p>
+
+            <p>
+                <input
+                    type="checkbox"
+                    id="emails"
+                    name="emails">
+
+                <label for="emails">
+                    Receber avisos por e-mail
+                </label>
+            </p>
+
+            <button type="submit">
+                Salvar Configurações
+            </button>
+
+        </form>
+
+        <p>
+            <a href="dashboard.html">Voltar ao Dashboard</a>
+        </p>
+
+    </main>
+
+</body>
+
+</html>
