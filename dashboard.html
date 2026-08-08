@@ -42,59 +42,202 @@
 
 </aside>
 
-    <hr>
+<main class="conteudo-dashboard">
 
-    <h2>Relatório de Acessos Recentes</h2>
+    <header class="topo-dashboard">
+        <div>
+            <h1>Olá, Babi</h1>
+            <p>Bem-vinda ao Smart Control</p>
+        </div>
 
-    <table>
+        <div class="busca">
+            <span>🔍</span>
+            <input type="text" placeholder="Buscar...">
+        </div>
+    </header>
 
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Data</th>
-                <th>Hora</th>
-                <th>Status</th>
-            </tr>
-        </thead>
 
-        <tbody>
-            <tr>
-                <td>João Silva</td>
-                <td>04/08/2026</td>
-                <td>08:30</td>
-                <td>Sucesso</td>
-            </tr>
+    <section class="cards-dashboard">
 
-            <tr>
-                <td>Maria Souza</td>
-                <td>04/08/2026</td>
-                <td>09:15</td>
-                <td>Falha</td>
-            </tr>
+        <article class="card-dashboard">
+            <div class="card-titulo">
+                <span>💲</span>
+                <p>Receita Total</p>
+            </div>
 
-            <tr>
-                <td>Carlos Lima</td>
-                <td>04/08/2026</td>
-                <td>10:40</td>
-                <td>Sucesso</td>
-            </tr>
+            <h2>R$ 124.560,00</h2>
+            <small class="positivo">↑ 12,5% vs mês anterior</small>
+        </article>
 
-            <tr>
-                <td>Ana Costa</td>
-                <td>04/08/2026</td>
-                <td>11:20</td>
-                <td>Sucesso</td>
-            </tr>
 
-            <tr>
-                <td>Pedro Alves</td>
-                <td>04/08/2026</td>
-                <td>13:50</td>
-                <td>Falha</td>
-            </tr>
-        </tbody>
+        <article class="card-dashboard">
+            <div class="card-titulo">
+                <span>🛒</span>
+                <p>Vendas</p>
+            </div>
 
-    </table>
+            <h2>1.250</h2>
+            <small class="positivo">↑ 8,3% vs mês anterior</small>
+        </article>
+
+
+        <article class="card-dashboard">
+            <div class="card-titulo">
+                <span>👥</span>
+                <p>Novos Clientes</p>
+            </div>
+
+            <h2>320</h2>
+            <small class="positivo">↑ 15,7% vs mês anterior</small>
+        </article>
+
+
+        <article class="card-dashboard">
+            <div class="card-titulo">
+                <span>📦</span>
+                <p>Pedidos</p>
+            </div>
+
+            <h2>532</h2>
+            <small class="negativo">↓ 3,2% vs mês anterior</small>
+        </article>
+
+    </section>
+
+
+    <section class="grade-graficos">
+
+        <article class="painel">
+            <div class="painel-topo">
+                <h2>Evolução da Receita</h2>
+                <span>Últimos 7 dias</span>
+            </div>
+
+            <div class="grafico-linha">
+
+                <svg viewBox="0 0 700 260" aria-label="Gráfico de evolução da receita">
+
+                    <line x1="40" y1="40" x2="670" y2="40"></line>
+                    <line x1="40" y1="90" x2="670" y2="90"></line>
+                    <line x1="40" y1="140" x2="670" y2="140"></line>
+                    <line x1="40" y1="190" x2="670" y2="190"></line>
+                    <line x1="40" y1="230" x2="670" y2="230"></line>
+
+                    <polyline
+                        points="50,210 140,165 225,140 310,185 400,140 490,125 575,110 660,55">
+                    </polyline>
+
+                    <circle cx="50" cy="210" r="5"></circle>
+                    <circle cx="140" cy="165" r="5"></circle>
+                    <circle cx="225" cy="140" r="5"></circle>
+                    <circle cx="310" cy="185" r="5"></circle>
+                    <circle cx="400" cy="140" r="5"></circle>
+                    <circle cx="490" cy="125" r="5"></circle>
+                    <circle cx="575" cy="110" r="5"></circle>
+                    <circle cx="660" cy="55" r="5"></circle>
+
+                </svg>
+
+            </div>
+        </article>
+
+
+        <article class="painel">
+            <h2>Vendas por Canal</h2>
+
+            <div class="grafico-pizza-area">
+
+                <div class="grafico-pizza"></div>
+
+                <div class="legenda-pizza">
+                    <p>🔵 Website <strong>45%</strong></p>
+                    <p>🟢 Aplicativo <strong>30%</strong></p>
+                    <p>🟠 Loja Física <strong>15%</strong></p>
+                    <p>🟣 Outros <strong>10%</strong></p>
+                </div>
+
+            </div>
+        </article>
+
+    </section>
+
+
+    <section class="grade-inferior">
+
+        <article class="painel">
+            <h2>Atividades Recentes</h2>
+
+            <div class="atividade">
+                <span>🛒</span>
+                <div>
+                    <strong>Novo pedido recebido #1258</strong>
+                    <p>Cliente: Julia Alves</p>
+                </div>
+                <small>Agora há pouco</small>
+            </div>
+
+            <div class="atividade">
+                <span>👥</span>
+                <div>
+                    <strong>Novo cliente cadastrado</strong>
+                    <p>Cliente: Gustavo Silva</p>
+                </div>
+                <small>30 min atrás</small>
+            </div>
+
+            <div class="atividade">
+                <span>📋</span>
+                <div>
+                    <strong>Relatório mensal gerado</strong>
+                    <p>Maio/2026</p>
+                </div>
+                <small>1 hora atrás</small>
+            </div>
+
+            <div class="atividade">
+                <span>💲</span>
+                <div>
+                    <strong>Pagamento recebido</strong>
+                    <p>Pedido #1257</p>
+                </div>
+                <small>2 horas atrás</small>
+            </div>
+
+        </article>
+
+
+        <article class="painel">
+            <h2>Tarefas Pendentes</h2>
+
+            <label class="tarefa">
+                <input type="checkbox">
+                <span>Enviar relatório financeiro</span>
+                <small>Hoje</small>
+            </label>
+
+            <label class="tarefa">
+                <input type="checkbox">
+                <span>Analisar novos indicadores</span>
+                <small>21/05</small>
+            </label>
+
+            <label class="tarefa">
+                <input type="checkbox" checked>
+                <span>Reunião com equipe comercial</span>
+                <small>Concluído</small>
+            </label>
+
+            <label class="tarefa">
+                <input type="checkbox">
+                <span>Atualizar cadastro de produtos</span>
+                <small>23/05</small>
+            </label>
+
+        </article>
+
+    </section>
+
+</main>
 
 </body>
 

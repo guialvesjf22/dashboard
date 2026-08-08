@@ -7,7 +7,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f3f4f6;
+    color: #111827;
 }
+
+
+/* =========================
+   MENU LATERAL
+   ========================= */
 
 .menu-lateral {
     width: 220px;
@@ -19,7 +25,7 @@ body {
     left: 0;
     top: 0;
 
-    padding: 25px 15px;
+    padding: 20px 15px;
 }
 
 .marca-dashboard {
@@ -32,15 +38,15 @@ body {
     color: #2563eb;
 }
 
-.menu-lateral ul {
+.menu-lateral nav ul {
     list-style: none;
 }
 
-.menu-lateral li {
+.menu-lateral nav ul li {
     margin-bottom: 10px;
 }
 
-.menu-lateral a {
+.menu-lateral nav ul li a {
     display: block;
     color: #dbe2ea;
     text-decoration: none;
@@ -51,7 +57,421 @@ body {
     font-size: 15px;
 }
 
-.menu-lateral a:hover {
+.menu-lateral nav ul li a:hover {
     background-color: #1e293b;
     color: white;
+}
+
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+   ========================= */
+
+.conteudo-dashboard {
+    margin-left: 220px;
+    min-height: 100vh;
+    padding: 28px;
+    background-color: #f3f4f6;
+}
+
+
+/* =========================
+   TOPO
+   ========================= */
+
+.topo-dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.topo-dashboard h1 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.topo-dashboard p {
+    margin-top: 5px;
+    color: #6b7280;
+}
+
+.busca {
+    width: 280px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background-color: white;
+
+    padding: 0 12px;
+
+    border-radius: 7px;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.busca input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   CARDS
+   ========================= */
+
+.cards-dashboard {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+.card-dashboard {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-titulo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+}
+
+.card-titulo span {
+    font-size: 25px;
+}
+
+.card-titulo p {
+    color: #4b5563;
+}
+
+.card-dashboard h2 {
+    margin-bottom: 15px;
+
+    font-size: 22px;
+}
+
+.card-dashboard small {
+    font-size: 12px;
+}
+
+.positivo {
+    color: #10b981;
+}
+
+.negativo {
+    color: #ef4444;
+}
+
+
+/* =========================
+   ÁREA DOS GRÁFICOS
+   ========================= */
+
+.grade-graficos {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+.painel {
+    background-color: white;
+
+    padding: 22px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.painel h2 {
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+.painel-topo {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.painel-topo span {
+    font-size: 12px;
+
+    color: #6b7280;
+
+    border: 1px solid #e5e7eb;
+
+    padding: 7px 10px;
+
+    border-radius: 5px;
+}
+
+
+/* =========================
+   GRÁFICO DE LINHA
+   ========================= */
+
+.grafico-linha {
+    width: 100%;
+
+    height: 260px;
+}
+
+.grafico-linha svg {
+    width: 100%;
+
+    height: 100%;
+}
+
+.grafico-linha line {
+    stroke: #e5e7eb;
+
+    stroke-width: 1;
+}
+
+.grafico-linha polyline {
+    fill: none;
+
+    stroke: #2563eb;
+
+    stroke-width: 4;
+}
+
+.grafico-linha circle {
+    fill: #2563eb;
+}
+
+
+/* =========================
+   GRÁFICO DE PIZZA
+   ========================= */
+
+.grafico-pizza-area {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    min-height: 250px;
+}
+
+.grafico-pizza {
+    width: 160px;
+
+    height: 160px;
+
+    border-radius: 50%;
+
+    background: conic-gradient(
+        #2563eb 0% 45%,
+        #22c55e 45% 75%,
+        #f59e0b 75% 90%,
+        #7c3aed 90% 100%
+    );
+
+    position: relative;
+}
+
+.grafico-pizza::after {
+    content: "";
+
+    position: absolute;
+
+    width: 75px;
+
+    height: 75px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    top: 42px;
+
+    left: 42px;
+}
+
+.legenda-pizza p {
+    margin: 12px 0;
+
+    font-size: 13px;
+}
+
+.legenda-pizza strong {
+    margin-left: 8px;
+}
+
+
+/* =========================
+   PARTE INFERIOR
+   ========================= */
+
+.grade-inferior {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* =========================
+   ATIVIDADES RECENTES
+   ========================= */
+
+.atividade {
+    display: grid;
+
+    grid-template-columns: 35px 1fr auto;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.atividade span {
+    font-size: 22px;
+}
+
+.atividade strong {
+    font-size: 14px;
+}
+
+.atividade p {
+    color: #6b7280;
+
+    font-size: 12px;
+
+    margin-top: 3px;
+}
+
+.atividade small {
+    color: #9ca3af;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   TAREFAS
+   ========================= */
+
+.tarefa {
+    display: grid;
+
+    grid-template-columns: 25px 1fr auto;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.tarefa input {
+    width: 17px;
+
+    height: 17px;
+}
+
+.tarefa span {
+    font-size: 14px;
+}
+
+.tarefa small {
+    color: #9ca3af;
+
+    font-size: 11px;
+}
+
+.tarefa input:checked + span {
+    text-decoration: line-through;
+
+    color: #6b7280;
+}
+
+
+/* =========================
+   RESPONSIVO
+   ========================= */
+
+@media (max-width: 1100px) {
+
+    .cards-dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grade-graficos {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .menu-lateral {
+        width: 180px;
+    }
+
+    .conteudo-dashboard {
+        margin-left: 180px;
+
+        padding: 20px;
+    }
+
+    .topo-dashboard {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .busca {
+        width: 100%;
+    }
+
+    .cards-dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .grade-inferior {
+        grid-template-columns: 1fr;
+    }
 }
