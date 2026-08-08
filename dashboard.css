@@ -548,3 +548,68 @@ cursor: pointer;
 .sair-menu:hover {
     background-color: #475569;
 }
+
+/* RELATÓRIO DE ACESSOS */
+
+.painel-acessos {
+    margin-top: 20px;
+}
+
+.painel-topo-acessos {
+    margin-bottom: 20px;
+}
+
+.painel-topo-acessos h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.painel-topo-acessos p {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.tabela-acessos-container {
+    overflow-x: auto;
+}
+
+.tabela-acessos {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-acessos th {
+    padding: 13px;
+    text-align: left;
+    background-color: #f8fafc;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.tabela-acessos td {
+    padding: 14px 13px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+.tabela-acessos tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.status-acesso {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.ativo-acesso {
+    background-color: #d1fae5;
+    color: #047857;
+}
+
+.encerrado-acesso {
+    background-color: #e5e7eb;
+    color: #4b5563;
+}

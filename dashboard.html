@@ -13,7 +13,6 @@
 <body>
 
     <!-- MENU LATERAL -->
-
     <aside class="menu-lateral">
 
         <div class="marca-dashboard">
@@ -45,43 +44,41 @@
                 <li>
                     <a href="configuracoes.html">⚙ Configurações</a>
                 </li>
-
             </ul>
         </nav>
 
+
+        <!-- PERFIL -->
         <div class="rodape-menu">
 
-    <a href="perfil.html" class="perfil-menu">
+            <a href="perfil.html" class="perfil-menu">
 
-    <img
-        src="assets/images/babi.png"
-        alt="Foto de Babi Rometi"
-        class="foto-perfil">
+                <img
+                    src="assets/images/babi.png"
+                    alt="Foto de Babi Rometi"
+                    class="foto-perfil">
 
-    <div class="dados-perfil">
-        <strong>Babi Rometi</strong>
-        <span>Analista</span>
-    </div>
+                <div class="dados-perfil">
+                    <strong>Babi Rometi</strong>
+                    <span>Analista</span>
+                </div>
 
-</a>
+            </a>
 
-    </div>
+            <a href="index.html" class="sair-menu">
+                ↪ Sair
+            </a>
 
-    <a href="index.html" class="sair-menu">
-        ↪ Sair
-    </a>
-
-</div>
+        </div>
 
     </aside>
 
 
     <!-- CONTEÚDO PRINCIPAL -->
-
     <main class="conteudo-dashboard">
 
-        <!-- TOPO -->
 
+        <!-- TOPO -->
         <header class="topo-dashboard">
 
             <div>
@@ -101,20 +98,20 @@
 
 
         <!-- CARDS -->
-
         <section class="cards-dashboard">
+
 
             <article class="card-dashboard">
 
                 <div class="card-titulo">
-                    <span>💲</span>
+                    <span>💰</span>
                     <p>Receita Total</p>
                 </div>
 
                 <h2>R$ 124.560,00</h2>
 
                 <small class="positivo">
-                    ↑ 12,5% vs mês anterior
+                    ↑ 12,4% este mês
                 </small>
 
             </article>
@@ -130,7 +127,7 @@
                 <h2>1.250</h2>
 
                 <small class="positivo">
-                    ↑ 8,3% vs mês anterior
+                    ↑ 8,2% este mês
                 </small>
 
             </article>
@@ -146,7 +143,7 @@
                 <h2>320</h2>
 
                 <small class="positivo">
-                    ↑ 15,7% vs mês anterior
+                    ↑ 15,7% este mês
                 </small>
 
             </article>
@@ -162,7 +159,7 @@
                 <h2>532</h2>
 
                 <small class="negativo">
-                    ↓ 3,2% vs mês anterior
+                    ↓ 2,1% este mês
                 </small>
 
             </article>
@@ -171,98 +168,88 @@
 
 
         <!-- GRÁFICOS -->
-
         <section class="grade-graficos">
 
+
+            <!-- GRÁFICO DE RECEITA -->
             <article class="painel">
 
                 <div class="painel-topo">
 
                     <h2>Evolução da Receita</h2>
 
-                    <span>Últimos 7 dias</span>
+                    <span>Últimos 6 meses</span>
 
                 </div>
+
 
                 <div class="grafico-linha">
 
                     <svg
-                        viewBox="0 0 700 260"
-                        role="img"
-                        aria-label="Gráfico de evolução da receita">
+                        viewBox="0 0 700 250"
+                        preserveAspectRatio="none">
 
-                        <line
-                            x1="40"
-                            y1="40"
-                            x2="670"
-                            y2="40"
-                            stroke="#e5e7eb">
-                        </line>
+                        <!-- LINHAS DE FUNDO -->
+                        <line x1="40" y1="40" x2="680" y2="40"></line>
 
-                        <line
-                            x1="40"
-                            y1="90"
-                            x2="670"
-                            y2="90"
-                            stroke="#e5e7eb">
-                        </line>
+                        <line x1="40" y1="90" x2="680" y2="90"></line>
 
-                        <line
-                            x1="40"
-                            y1="140"
-                            x2="670"
-                            y2="140"
-                            stroke="#e5e7eb">
-                        </line>
+                        <line x1="40" y1="140" x2="680" y2="140"></line>
 
-                        <line
-                            x1="40"
-                            y1="190"
-                            x2="670"
-                            y2="190"
-                            stroke="#e5e7eb">
-                        </line>
-
-                        <line
-                            x1="40"
-                            y1="230"
-                            x2="670"
-                            y2="230"
-                            stroke="#e5e7eb">
-                        </line>
+                        <line x1="40" y1="190" x2="680" y2="190"></line>
 
 
+                        <!-- LINHA DO GRÁFICO -->
                         <polyline
-                            points="
-                            50,210
-                            140,165
-                            225,140
-                            310,185
-                            400,140
-                            490,125
-                            575,110
-                            660,55"
+                            points="50,180 170,150 290,165 410,105 530,90 650,45"
                             fill="none"
                             stroke="#2563eb"
                             stroke-width="4">
                         </polyline>
 
 
-                        <circle cx="50" cy="210" r="5" fill="#2563eb"></circle>
+                        <!-- PONTOS -->
+                        <circle
+                            cx="50"
+                            cy="180"
+                            r="5"
+                            fill="#2563eb">
+                        </circle>
 
-                        <circle cx="140" cy="165" r="5" fill="#2563eb"></circle>
+                        <circle
+                            cx="170"
+                            cy="150"
+                            r="5"
+                            fill="#2563eb">
+                        </circle>
 
-                        <circle cx="225" cy="140" r="5" fill="#2563eb"></circle>
+                        <circle
+                            cx="290"
+                            cy="165"
+                            r="5"
+                            fill="#2563eb">
+                        </circle>
 
-                        <circle cx="310" cy="185" r="5" fill="#2563eb"></circle>
+                        <circle
+                            cx="410"
+                            cy="105"
+                            r="5"
+                            fill="#2563eb">
+                        </circle>
 
-                        <circle cx="400" cy="140" r="5" fill="#2563eb"></circle>
+                        <circle
+                            cx="530"
+                            cy="90"
+                            r="5"
+                            fill="#2563eb">
+                        </circle>
 
-                        <circle cx="490" cy="125" r="5" fill="#2563eb"></circle>
-
-                        <circle cx="575" cy="110" r="5" fill="#2563eb"></circle>
-
-                        <circle cx="660" cy="55" r="5" fill="#2563eb"></circle>
+                        <circle
+                            cx="650"
+                            cy="45"
+                            r="5"
+                            fill="#2563eb">
+                        </circle>
 
                     </svg>
 
@@ -271,6 +258,7 @@
             </article>
 
 
+            <!-- VENDAS POR CANAL -->
             <article class="painel">
 
                 <h2>Vendas por Canal</h2>
@@ -279,25 +267,26 @@
 
                     <div class="grafico-pizza"></div>
 
+
                     <div class="legenda-pizza">
 
                         <p>
-                            🔵 Website
+                            🟦 Site
                             <strong>45%</strong>
                         </p>
 
                         <p>
-                            🟢 Aplicativo
+                            🟩 Loja
                             <strong>30%</strong>
                         </p>
 
                         <p>
-                            🟠 Loja Física
+                            🟨 Marketplace
                             <strong>15%</strong>
                         </p>
 
                         <p>
-                            🟣 Outros
+                            🟪 Outros
                             <strong>10%</strong>
                         </p>
 
@@ -311,67 +300,67 @@
 
 
         <!-- PARTE INFERIOR -->
-
         <section class="grade-inferior">
 
-            <!-- ATIVIDADES -->
 
+            <!-- ATIVIDADES -->
             <article class="painel">
 
                 <h2>Atividades Recentes</h2>
+
 
                 <div class="atividade">
 
                     <span>🛒</span>
 
                     <div>
-                        <strong>Novo pedido recebido #1258</strong>
-                        <p>Cliente: Julia Alves</p>
+                        <strong>Novo pedido #1258</strong>
+                        <p>Julia Alves realizou uma compra.</p>
                     </div>
 
-                    <small>Agora há pouco</small>
+                    <small>10 min</small>
 
                 </div>
 
 
                 <div class="atividade">
 
-                    <span>👥</span>
+                    <span>👤</span>
 
                     <div>
                         <strong>Novo cliente cadastrado</strong>
-                        <p>Cliente: Gustavo Silva</p>
+                        <p>Gustavo Silva foi adicionado.</p>
                     </div>
 
-                    <small>30 min atrás</small>
+                    <small>35 min</small>
 
                 </div>
 
 
                 <div class="atividade">
 
-                    <span>📋</span>
+                    <span>💳</span>
 
                     <div>
-                        <strong>Relatório mensal gerado</strong>
-                        <p>Maio/2026</p>
+                        <strong>Pagamento confirmado</strong>
+                        <p>Pedido #1254 aprovado.</p>
                     </div>
 
-                    <small>1 hora atrás</small>
+                    <small>1 h</small>
 
                 </div>
 
 
                 <div class="atividade">
 
-                    <span>💲</span>
+                    <span>📊</span>
 
                     <div>
-                        <strong>Pagamento recebido</strong>
-                        <p>Pedido #1257</p>
+                        <strong>Relatório atualizado</strong>
+                        <p>Relatório financeiro disponível.</p>
                     </div>
 
-                    <small>2 horas atrás</small>
+                    <small>2 h</small>
 
                 </div>
 
@@ -379,17 +368,17 @@
 
 
             <!-- TAREFAS -->
-
             <article class="painel">
 
                 <h2>Tarefas Pendentes</h2>
+
 
                 <label class="tarefa">
 
                     <input type="checkbox">
 
                     <span>
-                        Enviar relatório financeiro
+                        Revisar relatório financeiro
                     </span>
 
                     <small>Hoje</small>
@@ -402,23 +391,10 @@
                     <input type="checkbox">
 
                     <span>
-                        Analisar novos indicadores
+                        Conferir pedidos pendentes
                     </span>
 
-                    <small>21/05</small>
-
-                </label>
-
-
-                <label class="tarefa">
-
-                    <input type="checkbox" checked>
-
-                    <span>
-                        Reunião com equipe comercial
-                    </span>
-
-                    <small>Concluído</small>
+                    <small>Hoje</small>
 
                 </label>
 
@@ -428,16 +404,142 @@
                     <input type="checkbox">
 
                     <span>
-                        Atualizar cadastro de produtos
+                        Atualizar cadastro de clientes
                     </span>
 
-                    <small>23/05</small>
+                    <small>Amanhã</small>
+
+                </label>
+
+
+                <label class="tarefa">
+
+                    <input type="checkbox">
+
+                    <span>
+                        Preparar relatório mensal
+                    </span>
+
+                    <small>12 Ago</small>
 
                 </label>
 
             </article>
 
         </section>
+
+
+        <!-- RELATÓRIO DE ACESSOS -->
+        <section class="painel painel-acessos">
+
+            <div class="painel-topo-acessos">
+
+                <div>
+                    <h2>Relatório de Acessos Recentes</h2>
+
+                    <p>
+                        Últimos acessos registrados no sistema.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="tabela-acessos-container">
+
+                <table class="tabela-acessos">
+
+                    <thead>
+
+                        <tr>
+                            <th>Nome</th>
+                            <th>Data</th>
+                            <th>Hora</th>
+                            <th>Status</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <tr>
+
+                            <td>Babi Rometi</td>
+
+                            <td>08/08/2026</td>
+
+                            <td>14:30</td>
+
+                            <td>
+                                <span class="status-acesso ativo-acesso">
+                                    Ativo
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Julia Alves</td>
+
+                            <td>08/08/2026</td>
+
+                            <td>13:45</td>
+
+                            <td>
+                                <span class="status-acesso ativo-acesso">
+                                    Ativo
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Gustavo Silva</td>
+
+                            <td>07/08/2026</td>
+
+                            <td>18:20</td>
+
+                            <td>
+                                <span class="status-acesso encerrado-acesso">
+                                    Encerrado
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Mariana Souza</td>
+
+                            <td>07/08/2026</td>
+
+                            <td>16:10</td>
+
+                            <td>
+                                <span class="status-acesso encerrado-acesso">
+                                    Encerrado
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
 
     </main>
 
