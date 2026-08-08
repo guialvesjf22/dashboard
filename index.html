@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Smart Control</title>
-<link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="pagina-login">
 
+        <!-- LADO ESQUERDO -->
         <div class="lado-esquerdo">
 
             <img
@@ -18,39 +23,62 @@
                 alt="Logo do sistema Smart Control"
                 class="logo-esquerda">
 
-            <h1>SMART <span>CONTROL</span></h1>
+            <h1>
+                SMART <span>CONTROL</span>
+            </h1>
 
             <div class="linha-azul"></div>
 
-            <p>Gestão inteligente,<br>resultados reais.</p>
+            <p>
+                Gestão inteligente,<br>
+                resultados reais.
+            </p>
 
         </div>
 
+
+        <!-- LADO DIREITO -->
         <div class="lado-direito">
 
             <div class="caixa-login">
 
-                <div class="icone-topo">🔒</div>
+                <div class="icone-topo">
+                    🔒
+                </div>
 
                 <h2>Bem-Vindo!</h2>
 
-                <p>Faça login para acessar o sistema.</p>
+                <p>
+                    Faça login para acessar o sistema.
+                </p>
 
-                <form>
 
-                    <label for="email">E-mail</label>
+                <!-- FORMULÁRIO DE LOGIN -->
+                <form action="dashboard.html">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
                     <input
                         type="email"
                         id="email"
+                        name="email"
                         placeholder="seu@email.com"
                         required>
 
-                    <label for="senha">Senha</label>
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
                     <input
                         type="password"
                         id="senha"
+                        name="senha"
                         placeholder="Digite a sua senha"
                         required>
+
 
                     <div class="opcoes-login">
 
@@ -65,13 +93,19 @@
 
                     </div>
 
-                   <button type="submit">Entrar</button>
 
-                <form action="dashboard.html">
+                    <button type="submit">
+                        Entrar
+                    </button>
+
+                </form>
+
 
                 <p class="cadastro">
                     Ainda não tem cadastro?
-                    <a href="cadastro.html">Cadastre-se</a>
+                    <a href="cadastro.html">
+                        Cadastre-se
+                    </a>
                 </p>
 
             </div>
@@ -81,4 +115,5 @@
     </div>
 
 </body>
+
 </html>
