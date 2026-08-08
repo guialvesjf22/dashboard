@@ -496,6 +496,14 @@ body {
     background-color: #1e293b;
 
     border-radius: 6px;
+
+    text-decoration: none;
+color: white;
+cursor: pointer;
+}
+
+.perfil-menu:hover {
+    background-color: #334155;
 }
 
 .foto-perfil {
