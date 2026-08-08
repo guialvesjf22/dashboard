@@ -5,53 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperar Senha - Smart Control</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>SMART CONTROL</h1>
-    </header>
+    <div class="pagina-recuperacao">
 
-    <main>
+        <div class="recuperacao-esquerda">
 
-        <h2>Recuperar Senha</h2>
+            <img
+                src="assets/images/logo.png"
+                alt="Logo do sistema Smart Control"
+                class="logo-recuperacao">
 
-        <p>Digite seu e-mail para recuperar sua senha.</p>
+            <h1>SMART <span>CONTROL</span></h1>
 
-        <form action="index.html" method="get">
-
-            <p>
-                <label for="email-recuperacao">E-mail:</label><br>
-
-                <input
-                    type="email"
-                    id="email-recuperacao"
-                    name="email"
-                    placeholder="seu@email.com"
-                    required>
-            </p>
+            <div class="linha-recuperacao"></div>
 
             <p>
-                <label for="codigo">Código:</label><br>
-
-                <input
-                    type="text"
-                    id="codigo"
-                    name="codigo"
-                    placeholder="Digite o código"
-                    required>
+                Gestão inteligente,<br>
+                resultados reais.
             </p>
 
-            <button type="submit">Enviar</button>
+        </div>
 
-        </form>
+        <div class="recuperacao-direita">
 
-        <p>
-            <a href="index.html">Voltar ao Login</a>
-        </p>
+            <div class="caixa-recuperacao">
 
-    </main>
+                <div class="cadeado">🔒</div>
+
+                <h2>Bem-Vindo!</h2>
+
+                <h3>Recuperar senha</h3>
+
+                <p class="instrucao">
+                    Digite seu e-mail para receber o código de recuperação.
+                </p>
+
+                <form action="index.html" method="get">
+
+                    <label for="email-recuperacao">E-mail</label>
+
+                    <input
+                        type="email"
+                        id="email-recuperacao"
+                        name="email"
+                        placeholder="✉  seu@email.com"
+                        required>
+
+                    <label for="codigo">Código</label>
+
+                    <input
+                        type="text"
+                        id="codigo"
+                        name="codigo"
+                        placeholder="🔒  Digite o código"
+                        required>
+
+                    <label class="lembrar-recuperacao">
+                        <input type="checkbox">
+                        Lembrar de mim
+                    </label>
+
+                    <button type="submit">
+                        Enviar
+                    </button>
+
+                </form>
+
+                <p class="voltar-login">
+                    <a href="index.html">Voltar ao Login</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 

@@ -165,3 +165,160 @@ body {
 .cadastro a {
     color: #1769ff;
 }
+
+/* =========================
+   RECUPERAÇÃO DE SENHA
+   ========================= */
+
+.pagina-recuperacao {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+/* LADO ESQUERDO */
+
+.recuperacao-esquerda {
+    width: 35%;
+    min-height: 100vh;
+    background-color: #24282B;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.logo-recuperacao {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.recuperacao-esquerda h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.recuperacao-esquerda h1 span {
+    color: #1769ff;
+}
+
+.linha-recuperacao {
+    width: 80px;
+    height: 3px;
+    background-color: #1769ff;
+    margin-bottom: 25px;
+}
+
+.recuperacao-esquerda p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* LADO DIREITO */
+
+.recuperacao-direita {
+    width: 65%;
+    min-height: 100vh;
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-recuperacao {
+    width: 350px;
+    text-align: center;
+}
+
+.cadeado {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.caixa-recuperacao h2 {
+    margin-bottom: 8px;
+}
+
+.caixa-recuperacao h3 {
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.instrucao {
+    font-size: 13px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* FORMULÁRIO */
+
+.caixa-recuperacao form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.caixa-recuperacao label {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.caixa-recuperacao input[type="email"],
+.caixa-recuperacao input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+
+    border: 1px solid #aaa;
+    background-color: white;
+}
+
+.lembrar-recuperacao {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    margin-bottom: 25px;
+}
+
+/* BOTÃO */
+
+.caixa-recuperacao button {
+    width: 100%;
+
+    padding: 11px;
+
+    border: none;
+
+    background-color: #2867f0;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.caixa-recuperacao button:hover {
+    background-color: #1755d7;
+}
+
+/* VOLTAR */
+
+.voltar-login {
+    margin-top: 20px;
+}
+
+.voltar-login a {
+    color: #1769ff;
+    text-decoration: none;
+}
+
+.voltar-login a:hover {
+    text-decoration: underline;
+}
