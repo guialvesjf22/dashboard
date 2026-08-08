@@ -4,70 +4,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Perfil - Smart Control</title>
+
+    <link rel="stylesheet" href="perfil.css">
 </head>
 
 <body>
 
-    <header>
-        <img
-            src="assets/images/logo.png"
-            alt="Logo do sistema Smart Control"
-            width="150">
+    <aside class="menu-lateral">
 
-        <h1>SMART CONTROL</h1>
-        <h2>Perfil</h2>
-    </header>
+        <div class="marca">
+            SMART <span>CONTROL</span>
+        </div>
 
-    <main>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">▦ Dashboard</a></li>
+                <li><a href="relatorios.html">▤ Relatórios</a></li>
+                <li><a href="indicadores.html">◩ Indicadores</a></li>
+                <li><a href="usuarios.html">👥 Usuários</a></li>
+                <li><a href="financeiro.html">▧ Financeiro</a></li>
+                <li><a href="configuracoes.html">⚙ Configurações</a></li>
+            </ul>
+        </nav>
 
-        <h3>Dados do Usuário</h3>
+        <div class="rodape-menu">
 
-        <p><strong>Nome:</strong> Babi</p>
-        <p><strong>E-mail:</strong> babi@smartcontrol.com</p>
-        <p><strong>Nível de Acesso:</strong> Administrador</p>
-        <p><strong>Status:</strong> Ativo</p>
+            <a href="perfil.html" class="perfil-menu ativo-perfil">
 
-        <h3>Alterar Dados</h3>
+                <img
+                    src="assets/images/babi.png"
+                    alt="Foto de Babi Rometi"
+                    class="foto-perfil">
 
-        <form>
+                <div class="dados-perfil">
+                    <strong>Babi Rometi</strong>
+                    <span>Analista</span>
+                </div>
 
-            <p>
-                <label for="nome">Nome:</label><br>
-                <input
-                    type="text"
-                    id="nome"
-                    name="nome"
-                    value="Babi">
-            </p>
+            </a>
 
-            <p>
-                <label for="email">E-mail:</label><br>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value="babi@smartcontrol.com">
-            </p>
+            <a href="index.html" class="sair-menu">
+                ↪ Sair
+            </a>
 
-            <p>
-                <label for="senha">Nova Senha:</label><br>
-                <input
-                    type="password"
-                    id="senha"
-                    name="senha"
-                    minlength="8">
-            </p>
+        </div>
 
-            <button type="submit">
-                Salvar Alterações
-            </button>
+    </aside>
 
-        </form>
 
-        <p>
-            <a href="dashboard.html">Voltar ao Dashboard</a>
-        </p>
+    <main class="conteudo">
+
+        <header class="topo">
+            <div>
+                <h1>Meu Perfil</h1>
+                <p>Visualize e atualize suas informações pessoais.</p>
+            </div>
+        </header>
+
+
+        <section class="perfil-principal">
+
+            <article class="cartao-perfil">
+
+                <img
+                    src="assets/images/babi.png"
+                    alt="Foto de Babi Rometi"
+                    class="foto-grande">
+
+                <h2>Babi Rometi</h2>
+
+                <p class="cargo">Analista</p>
+
+                <span class="status">● Conta ativa</span>
+
+                <div class="linha"></div>
+
+                <div class="informacao-perfil">
+                    <span>E-mail</span>
+                    <strong>babi@smartcontrol.com</strong>
+                </div>
+
+                <div class="informacao-perfil">
+                    <span>Nível de acesso</span>
+                    <strong>Analista</strong>
+                </div>
+
+                <div class="informacao-perfil">
+                    <span>Último acesso</span>
+                    <strong>Hoje, 14:30</strong>
+                </div>
+
+                <div class="informacao-perfil">
+                    <span>Membro desde</span>
+                    <strong>Janeiro de 2026</strong>
+                </div>
+
+            </article>
+
+
+            <article class="painel">
+
+                <div class="painel-topo">
+
+                    <div>
+                        <h2>Informações Pessoais</h2>
+                        <p>Edite os dados básicos da sua conta.</p>
+                    </div>
+
+                </div>
+
+
+                <form>
+
+                    <div class="linha-formulario">
+
+                        <div class="campo">
+                            <label for="nome">Nome Completo</label>
+
+                            <input
+                                type="text"
+                                id="nome"
+                                value="Babi Rometi">
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="cargo">Cargo</label>
+
+                            <input
+                                type="text"
+                                id="cargo"
+                                value="Analista">
+                        </div>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="email">E-mail</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            value="babi@smartcontrol.com">
+
+                    </div>
+
+
+                    <div class="linha-formulario">
+
+                        <div class="campo">
+
+                            <label for="telefone">Telefone</label>
+
+                            <input
+                                type="tel"
+                                id="telefone"
+                                placeholder="(32) 98896-5367">
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="departamento">Departamento</label>
+
+                            <select id="departamento">
+
+                                <option>Administrativo</option>
+                                <option selected>Comercial</option>
+                                <option>Financeiro</option>
+                                <option>Atendimento</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="bio">Sobre</label>
+
+                        <textarea
+                            id="bio"
+                            rows="5"
+                            placeholder="Escreva uma breve descrição...">Analista responsável pelo acompanhamento de indicadores e resultados do Smart Control.</textarea>
+
+                    </div>
+
+
+                    <div class="acoes">
+
+                        <button
+                            type="button"
+                            class="cancelar">
+                            Cancelar
+                        </button>
+
+                        <button
+                            type="button"
+                            class="salvar">
+                            Salvar Alterações
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </article>
+
+        </section>
+
+
+        <section class="painel painel-seguranca">
+
+            <div class="painel-topo">
+
+                <div>
+                    <h2>Segurança da Conta</h2>
+                    <p>Gerencie sua senha e informações de acesso.</p>
+                </div>
+
+            </div>
+
+
+            <div class="seguranca-item">
+
+                <div>
+                    <strong>Senha</strong>
+                    <p>Última alteração há 30 dias.</p>
+                </div>
+
+                <a href="configuracoes.html">
+                    Alterar Senha
+                </a>
+
+            </div>
+
+
+            <div class="seguranca-item">
+
+                <div>
+                    <strong>Status da Conta</strong>
+                    <p>Sua conta está ativa e funcionando normalmente.</p>
+                </div>
+
+                <span class="conta-ativa">
+                    Ativa
+                </span>
+
+            </div>
+
+        </section>
 
     </main>
 
