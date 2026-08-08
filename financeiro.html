@@ -4,75 +4,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Financeiro - Smart Control</title>
+
+    <link rel="stylesheet" href="financeiro.css">
 </head>
 
 <body>
 
-    <header>
-        <img
-            src="assets/images/logo.png"
-            alt="Logo do sistema Smart Control"
-            width="150">
+    <aside class="menu-lateral">
 
-        <h1>SMART CONTROL</h1>
-        <h2>Financeiro</h2>
-    </header>
+        <div class="marca">
+            SMART <span>CONTROL</span>
+        </div>
 
-    <main>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">▦ Dashboard</a></li>
+                <li><a href="relatorios.html">▤ Relatórios</a></li>
+                <li><a href="indicadores.html">◩ Indicadores</a></li>
+                <li><a href="usuarios.html">👥 Usuários</a></li>
+                <li><a href="financeiro.html" class="ativo">▧ Financeiro</a></li>
+                <li><a href="configuracoes.html">⚙ Configurações</a></li>
+            </ul>
+        </nav>
 
-        <h3>Resumo Financeiro</h3>
+        <div class="rodape-menu">
 
-        <ul>
-            <li>Receita Total: R$ 124.560,00</li>
-            <li>Despesas: R$ 68.320,00</li>
-            <li>Lucro: R$ 56.240,00</li>
-            <li>Pagamentos Pendentes: R$ 12.500,00</li>
-        </ul>
+            <a href="perfil.html" class="perfil-menu">
 
-        <h3>Últimas Movimentações</h3>
+                <img
+                    src="assets/images/babi.png"
+                    alt="Foto de Babi Rometi"
+                    class="foto-perfil">
 
-        <table>
+                <div class="dados-perfil">
+                    <strong>Babi Rometi</strong>
+                    <span>Analista</span>
+                </div>
 
-            <thead>
-                <tr>
-                    <th>Descrição</th>
-                    <th>Data</th>
-                    <th>Valor</th>
-                    <th>Tipo</th>
-                </tr>
-            </thead>
+            </a>
 
-            <tbody>
+            <a href="index.html" class="sair-menu">
+                ↪ Sair
+            </a>
 
-                <tr>
-                    <td>Venda #1258</td>
-                    <td>05/08/2026</td>
-                    <td>R$ 1.250,00</td>
-                    <td>Entrada</td>
-                </tr>
+        </div>
 
-                <tr>
-                    <td>Fornecedor</td>
-                    <td>04/08/2026</td>
-                    <td>R$ 850,00</td>
-                    <td>Saída</td>
-                </tr>
+    </aside>
 
-                <tr>
-                    <td>Venda #1257</td>
-                    <td>04/08/2026</td>
-                    <td>R$ 2.100,00</td>
-                    <td>Entrada</td>
-                </tr>
 
-            </tbody>
+    <main class="conteudo">
 
-        </table>
+        <header class="topo">
 
-        <p>
-            <a href="dashboard.html">Voltar ao Dashboard</a>
-        </p>
+            <div>
+                <h1>Financeiro</h1>
+                <p>Acompanhe receitas, despesas e movimentações financeiras.</p>
+            </div>
+
+            <div class="busca">
+                🔍
+                <input type="text" placeholder="Buscar movimentação...">
+            </div>
+
+        </header>
+
+
+        <section class="cards">
+
+            <article class="card">
+                <div class="icone verde">💰</div>
+
+                <div>
+                    <p>Receita Total</p>
+                    <h2>R$ 124.560</h2>
+                    <small class="positivo">↑ 12,4% este mês</small>
+                </div>
+            </article>
+
+
+            <article class="card">
+                <div class="icone vermelho">💸</div>
+
+                <div>
+                    <p>Despesas</p>
+                    <h2>R$ 48.320</h2>
+                    <small class="negativo">↑ 4,2% este mês</small>
+                </div>
+            </article>
+
+
+            <article class="card">
+                <div class="icone azul">📈</div>
+
+                <div>
+                    <p>Lucro</p>
+                    <h2>R$ 76.240</h2>
+                    <small class="positivo">↑ 8,6% este mês</small>
+                </div>
+            </article>
+
+
+            <article class="card">
+                <div class="icone laranja">⏳</div>
+
+                <div>
+                    <p>Pagamentos Pendentes</p>
+                    <h2>R$ 8.750</h2>
+                    <small>6 pagamentos</small>
+                </div>
+            </article>
+
+        </section>
+
+
+        <section class="grade-principal">
+
+            <article class="painel">
+
+                <div class="painel-topo">
+                    <div>
+                        <h2>Resumo Financeiro</h2>
+                        <p>Receitas e despesas dos últimos meses.</p>
+                    </div>
+
+                    <select>
+                        <option>Últimos 6 meses</option>
+                        <option>Últimos 3 meses</option>
+                        <option>Este ano</option>
+                    </select>
+                </div>
+
+
+                <div class="grafico">
+
+                    <div class="coluna">
+                        <div class="barra receita" style="height: 55%;"></div>
+                        <div class="barra despesa" style="height: 30%;"></div>
+                        <span>Mar</span>
+                    </div>
+
+                    <div class="coluna">
+                        <div class="barra receita" style="height: 65%;"></div>
+                        <div class="barra despesa" style="height: 35%;"></div>
+                        <span>Abr</span>
+                    </div>
+
+                    <div class="coluna">
+                        <div class="barra receita" style="height: 58%;"></div>
+                        <div class="barra despesa" style="height: 32%;"></div>
+                        <span>Mai</span>
+                    </div>
+
+                    <div class="coluna">
+                        <div class="barra receita" style="height: 72%;"></div>
+                        <div class="barra despesa" style="height: 40%;"></div>
+                        <span>Jun</span>
+                    </div>
+
+                    <div class="coluna">
+                        <div class="barra receita" style="height: 84%;"></div>
+                        <div class="barra despesa" style="height: 42%;"></div>
+                        <span>Jul</span>
+                    </div>
+
+                    <div class="coluna">
+                        <div class="barra receita" style="height: 92%;"></div>
+                        <div class="barra despesa" style="height: 38%;"></div>
+                        <span>Ago</span>
+                    </div>
+
+                </div>
+
+                <div class="legenda">
+                    <span><i class="cor-receita"></i> Receita</span>
+                    <span><i class="cor-despesa"></i> Despesa</span>
+                </div>
+
+            </article>
+
+
+            <article class="painel resumo">
+
+                <h2>Resumo do Mês</h2>
+
+                <div class="linha-resumo">
+                    <span>Receita</span>
+                    <strong class="positivo">R$ 124.560</strong>
+                </div>
+
+                <div class="linha-resumo">
+                    <span>Despesas</span>
+                    <strong class="negativo">R$ 48.320</strong>
+                </div>
+
+                <div class="linha-resumo">
+                    <span>Lucro Líquido</span>
+                    <strong>R$ 76.240</strong>
+                </div>
+
+                <div class="linha-resumo">
+                    <span>Margem de Lucro</span>
+                    <strong>61,2%</strong>
+                </div>
+
+                <div class="saldo">
+                    <span>Saldo Atual</span>
+                    <h2>R$ 198.450,00</h2>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <section class="painel">
+
+            <div class="painel-topo">
+
+                <div>
+                    <h2>Movimentações Recentes</h2>
+                    <p>Últimas entradas e saídas registradas.</p>
+                </div>
+
+                <button type="button" class="nova-movimentacao">
+                    + Nova Movimentação
+                </button>
+
+            </div>
+
+
+            <div class="filtros">
+
+                <select>
+                    <option>Todas as movimentações</option>
+                    <option>Receitas</option>
+                    <option>Despesas</option>
+                </select>
+
+                <select>
+                    <option>Este mês</option>
+                    <option>Últimos 7 dias</option>
+                    <option>Últimos 30 dias</option>
+                </select>
+
+            </div>
+
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                            <th>Categoria</th>
+                            <th>Data</th>
+                            <th>Tipo</th>
+                            <th>Valor</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Venda Pedido #1258</td>
+                            <td>Vendas</td>
+                            <td>08/08/2026</td>
+                            <td><span class="tipo entrada">Entrada</span></td>
+                            <td class="valor-entrada">+ R$ 4.850,00</td>
+                            <td><span class="status pago">Pago</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Pagamento Fornecedor</td>
+                            <td>Fornecedores</td>
+                            <td>07/08/2026</td>
+                            <td><span class="tipo saida">Saída</span></td>
+                            <td class="valor-saida">- R$ 2.340,00</td>
+                            <td><span class="status pago">Pago</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Venda Pedido #1254</td>
+                            <td>Vendas</td>
+                            <td>06/08/2026</td>
+                            <td><span class="tipo entrada">Entrada</span></td>
+                            <td class="valor-entrada">+ R$ 3.200,00</td>
+                            <td><span class="status pendente">Pendente</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Serviço de Marketing</td>
+                            <td>Marketing</td>
+                            <td>05/08/2026</td>
+                            <td><span class="tipo saida">Saída</span></td>
+                            <td class="valor-saida">- R$ 1.480,00</td>
+                            <td><span class="status pago">Pago</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
 
     </main>
 
