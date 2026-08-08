@@ -1,99 +1,191 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Cadastro - Smart Control</title>
+
+    <link rel="stylesheet" href="cadastro.css">
 </head>
 
 <body>
 
-    <header>
-        <img src="assets/images/logo.png"
-        alt="Logo do sistema Smart Control"
-        width="150">
-    </header>
+    <div class="pagina-cadastro">
 
-    <header>
-        <h1>SMART CONTROL</h1>
-        <h2>Cadastro de Usuário</h2>
-    </header>
+        <!-- LADO ESQUERDO -->
+        <section class="lado-esquerdo">
 
-    <main>
+            <img
+                src="assets/images/logo.png"
+                alt="Logo do sistema Smart Control"
+                class="logo">
 
-    <form action="usuarios.html" method="get">
+            <h1>
+                SMART <span>CONTROL</span>
+            </h1>
 
-        <p>
+            <div class="linha-azul"></div>
 
-            <label for="nome">Nome Completo:</label><br>
-            <input 
-            type="text"
-            id="nome"
-            name="nome"
-            required>
-    
             <p>
-                <label for="email">E-mail Corporativo:</label><br>
-                <input
-                type="email"
-                id="email"
-                name="email"
-                required>
+                Gestão inteligente,<br>
+                resultados reais.
+            </p>
+
+        </section>
+
+
+        <!-- LADO DIREITO -->
+        <main class="lado-direito">
+
+            <div class="caixa-cadastro">
+
+                <div class="icone">👤</div>
+
+                <h2>Crie sua conta</h2>
+
+                <p class="subtitulo">
+                    Preencha seus dados para acessar o Smart Control.
                 </p>
-                
-                <p>
-                <label for="senha">Senha:</label><br>
-                <input
-                type="password"
-                id="senha"
-                name="senha"
-                minlength="8"
-                required>
-                </p>
-                
-                <p>
-                <label for="nivel">Nível de Acesso:</label><br>
-                
-                <select id="nivel" name="nivel" required>
-                <option value="">Selecione</option>
-                <option value="administrador">Administrador</option>
-                <option value="analista">Analista</option>
-                <option value="usuario">Usuário</option>
-                </select>
-                </p>
-                
-                <p>
-                <input
-                type="checkbox"
-                id="termos"
-                name="termos"
-                required>
-                
-                <label for="termos">
-                Aceito os Termos de Uso
-                </label>
-                </p>
-                
-                <button type="submit">Cadastrar</button>
-                
+
+
+                <form action="usuarios.html" method="get">
+
+                    <div class="campo">
+
+                        <label for="nome">
+                            Nome Completo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Digite seu nome completo"
+                            required>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="email">
+                            E-mail Corporativo
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="seu@email.com"
+                            required>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="senha">
+                            Senha
+                        </label>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Mínimo de 8 caracteres"
+                            minlength="8"
+                            required>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="nivel">
+                            Nível de Acesso
+                        </label>
+
+                        <select
+                            id="nivel"
+                            name="nivel"
+                            required>
+
+                            <option value="" disabled selected>
+                                Selecione o nível de acesso
+                            </option>
+
+                            <option value="administrador">
+                                Administrador
+                            </option>
+
+                            <option value="analista">
+                                Analista
+                            </option>
+
+                            <option value="usuario">
+                                Usuário
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <label class="termos">
+
+                        <input
+                            type="checkbox"
+                            required>
+
+                        <span>
+                            Li e aceito os termos de uso do Smart Control.
+                        </span>
+
+                    </label>
+
+
+                    <button type="submit">
+                        Cadastrar
+                    </button>
+
                 </form>
-                
-                <p>
-                <a href="index.html">Voltar ao Login</a>
+
+
+                <p class="login">
+                    Já possui uma conta?
+                    <a href="index.html">
+                        Voltar ao Login
+                    </a>
                 </p>
 
-    </main>
-                <footer>
-    <h2>Localização - SENAI CFP José Fagundes Netto</h2>
+            </div>
 
-    <iframe
-        src="https://www.google.com/maps?q=SENAI+Juiz+de+Fora+CFP+Jose+Fagundes+Netto+Avenida+Rio+Branco+1219+Juiz+de+Fora+MG&output=embed"
-        width="600"
-        height="300"
-        title="Mapa do SENAI CFP José Fagundes Netto"
-        loading="lazy">
-    </iframe>
-</footer>
-                    
+        </main>
+
+    </div>
+
+
+    <!-- LOCALIZAÇÃO -->
+    <footer class="localizacao">
+
+        <div>
+            <h2>Nossa Localização</h2>
+
+            <p>
+                SENAI Juiz de Fora - CFP José Fagundes Netto
+            </p>
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps?q=SENAI+Juiz+de+Fora+CFP+Jose+Fagundes+Netto&output=embed"
+            title="Mapa do SENAI Juiz de Fora"
+            loading="lazy">
+        </iframe>
+
+    </footer>
+
 </body>
+
 </html>
