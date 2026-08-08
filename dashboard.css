@@ -475,3 +475,68 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* RODAPÉ DO MENU */
+
+.rodape-menu {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    right: 15px;
+}
+
+.perfil-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px;
+    margin-bottom: 10px;
+
+    background-color: #1e293b;
+
+    border-radius: 6px;
+}
+
+.foto-perfil {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 6px;
+
+    object-fit: cover;
+}
+
+.dados-perfil {
+    display: flex;
+    flex-direction: column;
+}
+
+.dados-perfil strong {
+    font-size: 13px;
+    color: white;
+}
+
+.dados-perfil span {
+    font-size: 11px;
+    color: #94a3b8;
+    margin-top: 3px;
+}
+
+.sair-menu {
+    display: block;
+
+    padding: 10px;
+
+    background-color: #334155;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+}
+
+.sair-menu:hover {
+    background-color: #475569;
+}
