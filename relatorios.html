@@ -4,35 +4,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Relatórios - Smart Control</title>
+
+    <link rel="stylesheet" href="relatorios.css">
 </head>
 
 <body>
 
-    <header>
-        <img
-            src="assets/images/logo.png"
-            alt="Logo do sistema Smart Control"
-            width="150">
+    <aside class="menu-lateral">
 
-        <h1>SMART CONTROL</h1>
-        <h2>Relatórios</h2>
-    </header>
+        <div class="marca">
+            SMART <span>CONTROL</span>
+        </div>
 
-    <main>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">▦ Dashboard</a></li>
+                <li><a href="relatorios.html" class="ativo">▤ Relatórios</a></li>
+                <li><a href="indicadores.html">◩ Indicadores</a></li>
+                <li><a href="usuarios.html">👥 Usuários</a></li>
+                <li><a href="financeiro.html">▧ Financeiro</a></li>
+                <li><a href="configuracoes.html">⚙ Configurações</a></li>
+            </ul>
+        </nav>
 
-        <h3>Relatórios do Sistema</h3>
+        <div class="rodape-menu">
 
-        <ul>
-            <li>Relatório de Vendas</li>
-            <li>Relatório de Clientes</li>
-            <li>Relatório Financeiro</li>
-            <li>Relatório de Acessos</li>
-        </ul>
+            <a href="perfil.html" class="perfil-menu">
 
-        <p>
-            <a href="dashboard.html">Voltar ao Dashboard</a>
-        </p>
+                <img
+                    src="assets/images/babi.png"
+                    alt="Foto de Babi Rometi"
+                    class="foto-perfil">
+
+                <div class="dados-perfil">
+                    <strong>Babi Rometi</strong>
+                    <span>Analista</span>
+                </div>
+
+            </a>
+
+            <a href="index.html" class="sair-menu">
+                ↪ Sair
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <main class="conteudo">
+
+        <header class="topo">
+
+            <div>
+                <h1>Relatórios</h1>
+                <p>Acompanhe e organize os relatórios do Smart Control.</p>
+            </div>
+
+            <div class="busca">
+                🔍
+                <input type="text" placeholder="Buscar relatório...">
+            </div>
+
+        </header>
+
+
+        <section class="cards">
+
+            <article class="card">
+                <span>📊</span>
+                <div>
+                    <p>Relatórios Gerados</p>
+                    <h2>48</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <span>📅</span>
+                <div>
+                    <p>Este Mês</p>
+                    <h2>12</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <span>✅</span>
+                <div>
+                    <p>Concluídos</p>
+                    <h2>42</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <span>⏳</span>
+                <div>
+                    <p>Pendentes</p>
+                    <h2>6</h2>
+                </div>
+            </article>
+
+        </section>
+
+
+        <section class="painel">
+
+            <div class="painel-topo">
+
+                <div>
+                    <h2>Relatórios do Sistema</h2>
+                    <p>Filtre e consulte os documentos disponíveis.</p>
+                </div>
+
+                <button type="button">
+                    + Novo Relatório
+                </button>
+
+            </div>
+
+
+            <div class="filtros">
+
+                <div>
+                    <label for="tipo">Tipo</label>
+
+                    <select id="tipo">
+                        <option>Todos</option>
+                        <option>Financeiro</option>
+                        <option>Vendas</option>
+                        <option>Clientes</option>
+                        <option>Indicadores</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="periodo">Período</label>
+
+                    <select id="periodo">
+                        <option>Últimos 30 dias</option>
+                        <option>Últimos 7 dias</option>
+                        <option>Este mês</option>
+                        <option>Este ano</option>
+                    </select>
+                </div>
+
+                <button type="button" class="filtrar">
+                    Filtrar
+                </button>
+
+            </div>
+
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Relatório</th>
+                            <th>Tipo</th>
+                            <th>Data</th>
+                            <th>Responsável</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Relatório Financeiro Mensal</td>
+                            <td>Financeiro</td>
+                            <td>08/08/2026</td>
+                            <td>Babi Rometi</td>
+                            <td><span class="status concluido">Concluído</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Desempenho de Vendas</td>
+                            <td>Vendas</td>
+                            <td>06/08/2026</td>
+                            <td>Babi Rometi</td>
+                            <td><span class="status concluido">Concluído</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Novos Clientes</td>
+                            <td>Clientes</td>
+                            <td>05/08/2026</td>
+                            <td>Julia Alves</td>
+                            <td><span class="status pendente">Pendente</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Indicadores Gerais</td>
+                            <td>Indicadores</td>
+                            <td>03/08/2026</td>
+                            <td>Gustavo Silva</td>
+                            <td><span class="status concluido">Concluído</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
 
     </main>
 
