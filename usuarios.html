@@ -4,70 +4,328 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Usuários - Smart Control</title>
+
+    <link rel="stylesheet" href="usuarios.css">
 </head>
 
 <body>
 
-    <header>
-        <img
-            src="assets/images/logo.png"
-            alt="Logo do sistema Smart Control"
-            width="150">
+    <aside class="menu-lateral">
 
-        <h1>SMART CONTROL</h1>
-        <h2>Usuários</h2>
-    </header>
+        <div class="marca">
+            SMART <span>CONTROL</span>
+        </div>
 
-    <main>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">▦ Dashboard</a></li>
+                <li><a href="relatorios.html">▤ Relatórios</a></li>
+                <li><a href="indicadores.html">◩ Indicadores</a></li>
+                <li><a href="usuarios.html" class="ativo">👥 Usuários</a></li>
+                <li><a href="financeiro.html">▧ Financeiro</a></li>
+                <li><a href="configuracoes.html">⚙ Configurações</a></li>
+            </ul>
+        </nav>
 
-        <h3>Usuários Cadastrados</h3>
+        <div class="rodape-menu">
 
-        <table>
+            <a href="perfil.html" class="perfil-menu">
 
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>E-mail</th>
-                    <th>Nível</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
+                <img
+                    src="assets/images/babi.png"
+                    alt="Foto de Babi Rometi"
+                    class="foto-perfil">
 
-            <tbody>
+                <div class="dados-perfil">
+                    <strong>Babi Rometi</strong>
+                    <span>Analista</span>
+                </div>
 
-                <tr>
-                    <td>Julia Alves</td>
-                    <td>julia@smartcontrol.com</td>
-                    <td>Administrador</td>
-                    <td>Ativo</td>
-                </tr>
+            </a>
 
-                <tr>
-                    <td>Gustavo Silva</td>
-                    <td>gustavo@smartcontrol.com</td>
-                    <td>Analista</td>
-                    <td>Ativo</td>
-                </tr>
+            <a href="index.html" class="sair-menu">
+                ↪ Sair
+            </a>
 
-                <tr>
-                    <td>Mariana Souza</td>
-                    <td>mariana@smartcontrol.com</td>
-                    <td>Usuário</td>
-                    <td>Inativo</td>
-                </tr>
+        </div>
 
-            </tbody>
+    </aside>
 
-        </table>
 
-        <p>
-            <a href="cadastro.html">Cadastrar novo usuário</a>
-        </p>
+    <main class="conteudo">
 
-        <p>
-            <a href="dashboard.html">Voltar ao Dashboard</a>
-        </p>
+        <header class="topo">
+
+            <div>
+                <h1>Usuários</h1>
+                <p>Gerencie os usuários cadastrados no Smart Control.</p>
+            </div>
+
+            <div class="busca">
+                🔍
+                <input type="text" placeholder="Buscar usuário...">
+            </div>
+
+        </header>
+
+
+        <section class="cards">
+
+            <article class="card">
+
+                <div class="icone azul">👥</div>
+
+                <div>
+                    <p>Total de Usuários</p>
+                    <h2>128</h2>
+                    <small>Usuários cadastrados</small>
+                </div>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="icone verde">✓</div>
+
+                <div>
+                    <p>Usuários Ativos</p>
+                    <h2>112</h2>
+                    <small class="positivo">87,5% do total</small>
+                </div>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="icone laranja">⌛</div>
+
+                <div>
+                    <p>Pendentes</p>
+                    <h2>9</h2>
+                    <small>Aguardando liberação</small>
+                </div>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="icone vermelho">✕</div>
+
+                <div>
+                    <p>Inativos</p>
+                    <h2>7</h2>
+                    <small class="negativo">5,4% do total</small>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <section class="painel">
+
+            <div class="painel-topo">
+
+                <div>
+                    <h2>Usuários Cadastrados</h2>
+                    <p>Visualize e gerencie os acessos do sistema.</p>
+                </div>
+
+                <a href="cadastro.html" class="novo-usuario">
+                    + Cadastrar Usuário
+                </a>
+
+            </div>
+
+
+            <div class="filtros">
+
+                <div>
+                    <label for="nivel">Nível de Acesso</label>
+
+                    <select id="nivel">
+                        <option>Todos</option>
+                        <option>Administrador</option>
+                        <option>Analista</option>
+                        <option>Usuário</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <label for="status">Status</label>
+
+                    <select id="status">
+                        <option>Todos</option>
+                        <option>Ativo</option>
+                        <option>Pendente</option>
+                        <option>Inativo</option>
+                    </select>
+                </div>
+
+                <button type="button" class="filtrar">
+                    Filtrar
+                </button>
+
+            </div>
+
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Usuário</th>
+                            <th>E-mail</th>
+                            <th>Nível</th>
+                            <th>Status</th>
+                            <th>Último Acesso</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <div class="usuario-info">
+
+                                    <img
+                                        src="assets/images/babi.png"
+                                        alt="Foto de Babi Rometi">
+
+                                    <strong>Babi Rometi</strong>
+
+                                </div>
+                            </td>
+
+                            <td>babi@smartcontrol.com</td>
+                            <td>Analista</td>
+
+                            <td>
+                                <span class="status ativo">
+                                    Ativo
+                                </span>
+                            </td>
+
+                            <td>Hoje, 14:30</td>
+
+                            <td>
+                                <button class="acao">Editar</button>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <div class="usuario-info">
+
+                                    <div class="avatar">
+                                        JA
+                                    </div>
+
+                                    <strong>Julia Alves</strong>
+
+                                </div>
+                            </td>
+
+                            <td>julia@smartcontrol.com</td>
+                            <td>Administrador</td>
+
+                            <td>
+                                <span class="status ativo">
+                                    Ativo
+                                </span>
+                            </td>
+
+                            <td>Hoje, 13:45</td>
+
+                            <td>
+                                <button class="acao">Editar</button>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <div class="usuario-info">
+
+                                    <div class="avatar">
+                                        GS
+                                    </div>
+
+                                    <strong>Gustavo Silva</strong>
+
+                                </div>
+                            </td>
+
+                            <td>gustavo@smartcontrol.com</td>
+                            <td>Analista</td>
+
+                            <td>
+                                <span class="status pendente">
+                                    Pendente
+                                </span>
+                            </td>
+
+                            <td>Ontem, 18:20</td>
+
+                            <td>
+                                <button class="acao">Editar</button>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <div class="usuario-info">
+
+                                    <div class="avatar">
+                                        MS
+                                    </div>
+
+                                    <strong>Mariana Souza</strong>
+
+                                </div>
+                            </td>
+
+                            <td>mariana@smartcontrol.com</td>
+                            <td>Usuário</td>
+
+                            <td>
+                                <span class="status inativo">
+                                    Inativo
+                                </span>
+                            </td>
+
+                            <td>02/08/2026</td>
+
+                            <td>
+                                <button class="acao">Editar</button>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
 
     </main>
 
