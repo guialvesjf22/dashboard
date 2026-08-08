@@ -4,68 +4,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Configurações - Smart Control</title>
+
+    <link rel="stylesheet" href="configuracoes.css">
 </head>
 
 <body>
 
-    <header>
-        <img
-            src="assets/images/logo.png"
-            alt="Logo do sistema Smart Control"
-            width="150">
+    <aside class="menu-lateral">
 
-        <h1>SMART CONTROL</h1>
-        <h2>Configurações</h2>
-    </header>
+        <div class="marca">
+            SMART <span>CONTROL</span>
+        </div>
 
-    <main>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">▦ Dashboard</a></li>
+                <li><a href="relatorios.html">▤ Relatórios</a></li>
+                <li><a href="indicadores.html">◩ Indicadores</a></li>
+                <li><a href="usuarios.html">👥 Usuários</a></li>
+                <li><a href="financeiro.html">▧ Financeiro</a></li>
+                <li><a href="configuracoes.html" class="ativo">⚙ Configurações</a></li>
+            </ul>
+        </nav>
 
-        <h3>Preferências do Sistema</h3>
+        <div class="rodape-menu">
 
-        <form>
+            <a href="perfil.html" class="perfil-menu">
 
-            <p>
-                <label for="idioma">Idioma:</label><br>
+                <img
+                    src="assets/images/babi.png"
+                    alt="Foto de Babi Rometi"
+                    class="foto-perfil">
 
-                <select id="idioma" name="idioma">
-                    <option value="pt-br">Português</option>
-                    <option value="en">Inglês</option>
-                    <option value="es">Espanhol</option>
-                </select>
-            </p>
+                <div class="dados-perfil">
+                    <strong>Babi Rometi</strong>
+                    <span>Analista</span>
+                </div>
 
-            <p>
-                <input
-                    type="checkbox"
-                    id="notificacoes"
-                    name="notificacoes">
+            </a>
 
-                <label for="notificacoes">
-                    Receber notificações do sistema
-                </label>
-            </p>
+            <a href="index.html" class="sair-menu">
+                ↪ Sair
+            </a>
 
-            <p>
-                <input
-                    type="checkbox"
-                    id="emails"
-                    name="emails">
+        </div>
 
-                <label for="emails">
-                    Receber avisos por e-mail
-                </label>
-            </p>
+    </aside>
 
-            <button type="submit">
+
+    <main class="conteudo">
+
+        <header class="topo">
+
+            <div>
+                <h1>Configurações</h1>
+                <p>Personalize as preferências do Smart Control.</p>
+            </div>
+
+        </header>
+
+
+        <section class="grade-configuracoes">
+
+            <article class="painel">
+
+                <div class="titulo-painel">
+                    <div class="icone">🌐</div>
+
+                    <div>
+                        <h2>Preferências Gerais</h2>
+                        <p>Configure idioma e aparência do sistema.</p>
+                    </div>
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="idioma">Idioma</label>
+
+                    <select id="idioma">
+                        <option>Português (Brasil)</option>
+                        <option>English</option>
+                        <option>Español</option>
+                    </select>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="tema">Tema</label>
+
+                    <select id="tema">
+                        <option>Claro</option>
+                        <option>Escuro</option>
+                        <option>Automático</option>
+                    </select>
+
+                </div>
+
+            </article>
+
+
+            <article class="painel">
+
+                <div class="titulo-painel">
+
+                    <div class="icone">🔔</div>
+
+                    <div>
+                        <h2>Notificações</h2>
+                        <p>Escolha quais alertas deseja receber.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="opcao">
+
+                    <div>
+                        <strong>Notificações do Sistema</strong>
+                        <p>Receba avisos importantes dentro do sistema.</p>
+                    </div>
+
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+
+                </div>
+
+
+                <div class="opcao">
+
+                    <div>
+                        <strong>Notificações por E-mail</strong>
+                        <p>Receba atualizações importantes por e-mail.</p>
+                    </div>
+
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+
+                </div>
+
+
+                <div class="opcao">
+
+                    <div>
+                        <strong>Alertas Financeiros</strong>
+                        <p>Receba avisos sobre pagamentos e movimentações.</p>
+                    </div>
+
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+
+                </div>
+
+            </article>
+
+
+            <article class="painel">
+
+                <div class="titulo-painel">
+
+                    <div class="icone">🔒</div>
+
+                    <div>
+                        <h2>Segurança</h2>
+                        <p>Gerencie opções relacionadas à segurança da conta.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="senha-atual">Senha Atual</label>
+
+                    <input
+                        type="password"
+                        id="senha-atual"
+                        placeholder="Digite sua senha atual">
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="nova-senha">Nova Senha</label>
+
+                    <input
+                        type="password"
+                        id="nova-senha"
+                        placeholder="Digite a nova senha">
+
+                </div>
+
+
+                <button type="button" class="botao-secundario">
+                    Alterar Senha
+                </button>
+
+            </article>
+
+
+            <article class="painel">
+
+                <div class="titulo-painel">
+
+                    <div class="icone">🖥️</div>
+
+                    <div>
+                        <h2>Sistema</h2>
+                        <p>Informações gerais da aplicação.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="informacao">
+                    <span>Versão</span>
+                    <strong>1.0.0</strong>
+                </div>
+
+
+                <div class="informacao">
+                    <span>Última atualização</span>
+                    <strong>08/08/2026</strong>
+                </div>
+
+
+                <div class="informacao">
+                    <span>Status do sistema</span>
+                    <strong class="online">● Online</strong>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <div class="acoes">
+
+            <button type="button" class="cancelar">
+                Cancelar
+            </button>
+
+            <button type="button" class="salvar">
                 Salvar Configurações
             </button>
 
-        </form>
-
-        <p>
-            <a href="dashboard.html">Voltar ao Dashboard</a>
-        </p>
+        </div>
 
     </main>
 
