@@ -4,35 +4,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Indicadores - Smart Control</title>
+
+    <link rel="stylesheet" href="indicadores.css">
 </head>
 
 <body>
 
-    <header>
-        <img
-            src="assets/images/logo.png"
-            alt="Logo do sistema Smart Control"
-            width="150">
+    <aside class="menu-lateral">
 
-        <h1>SMART CONTROL</h1>
-        <h2>Indicadores</h2>
-    </header>
+        <div class="marca">
+            SMART <span>CONTROL</span>
+        </div>
 
-    <main>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">▦ Dashboard</a></li>
+                <li><a href="relatorios.html">▤ Relatórios</a></li>
+                <li><a href="indicadores.html" class="ativo">◩ Indicadores</a></li>
+                <li><a href="usuarios.html">👥 Usuários</a></li>
+                <li><a href="financeiro.html">▧ Financeiro</a></li>
+                <li><a href="configuracoes.html">⚙ Configurações</a></li>
+            </ul>
+        </nav>
 
-        <h3>Indicadores do Sistema</h3>
+        <div class="rodape-menu">
 
-        <ul>
-            <li>Meta de vendas: 1.500</li>
-            <li>Vendas realizadas: 1.250</li>
-            <li>Novos clientes: 320</li>
-            <li>Pedidos realizados: 532</li>
-        </ul>
+            <a href="perfil.html" class="perfil-menu">
 
-        <p>
-            <a href="dashboard.html">Voltar ao Dashboard</a>
-        </p>
+                <img
+                    src="assets/images/babi.png"
+                    alt="Foto de Babi Rometi"
+                    class="foto-perfil">
+
+                <div class="dados-perfil">
+                    <strong>Babi Rometi</strong>
+                    <span>Analista</span>
+                </div>
+
+            </a>
+
+            <a href="index.html" class="sair-menu">
+                ↪ Sair
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <main class="conteudo">
+
+        <header class="topo">
+
+            <div>
+                <h1>Indicadores</h1>
+                <p>Acompanhe os principais resultados do Smart Control.</p>
+            </div>
+
+            <div class="busca">
+                🔍
+                <input type="text" placeholder="Buscar indicador...">
+            </div>
+
+        </header>
+
+
+        <section class="cards">
+
+            <article class="card">
+                <div class="icone azul">📈</div>
+
+                <div>
+                    <p>Taxa de Conversão</p>
+                    <h2>18,7%</h2>
+                    <small class="positivo">↑ 2,4% este mês</small>
+                </div>
+            </article>
+
+
+            <article class="card">
+                <div class="icone verde">🎯</div>
+
+                <div>
+                    <p>Meta de Vendas</p>
+                    <h2>82%</h2>
+                    <small class="positivo">↑ 7,5% este mês</small>
+                </div>
+            </article>
+
+
+            <article class="card">
+                <div class="icone roxo">👥</div>
+
+                <div>
+                    <p>Clientes Ativos</p>
+                    <h2>1.840</h2>
+                    <small class="positivo">↑ 11,3%</small>
+                </div>
+            </article>
+
+
+            <article class="card">
+                <div class="icone laranja">⭐</div>
+
+                <div>
+                    <p>Satisfação</p>
+                    <h2>94%</h2>
+                    <small class="positivo">↑ 1,8%</small>
+                </div>
+            </article>
+
+        </section>
+
+
+        <section class="grade-principal">
+
+            <article class="painel">
+
+                <div class="painel-topo">
+                    <div>
+                        <h2>Desempenho Mensal</h2>
+                        <p>Comparativo dos últimos meses.</p>
+                    </div>
+
+                    <select>
+                        <option>Últimos 6 meses</option>
+                        <option>Últimos 3 meses</option>
+                        <option>Este ano</option>
+                    </select>
+                </div>
+
+
+                <div class="grafico-barras">
+
+                    <div class="grupo-barra">
+                        <div class="barra" style="height: 42%;"></div>
+                        <span>Mar</span>
+                    </div>
+
+                    <div class="grupo-barra">
+                        <div class="barra" style="height: 55%;"></div>
+                        <span>Abr</span>
+                    </div>
+
+                    <div class="grupo-barra">
+                        <div class="barra" style="height: 48%;"></div>
+                        <span>Mai</span>
+                    </div>
+
+                    <div class="grupo-barra">
+                        <div class="barra" style="height: 68%;"></div>
+                        <span>Jun</span>
+                    </div>
+
+                    <div class="grupo-barra">
+                        <div class="barra" style="height: 76%;"></div>
+                        <span>Jul</span>
+                    </div>
+
+                    <div class="grupo-barra">
+                        <div class="barra destaque" style="height: 91%;"></div>
+                        <span>Ago</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="painel">
+
+                <h2>Metas do Mês</h2>
+
+                <div class="meta">
+
+                    <div class="meta-topo">
+                        <span>Vendas</span>
+                        <strong>82%</strong>
+                    </div>
+
+                    <div class="progresso">
+                        <div class="progresso-preenchido vendas"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="meta">
+
+                    <div class="meta-topo">
+                        <span>Novos Clientes</span>
+                        <strong>68%</strong>
+                    </div>
+
+                    <div class="progresso">
+                        <div class="progresso-preenchido clientes"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="meta">
+
+                    <div class="meta-topo">
+                        <span>Receita</span>
+                        <strong>91%</strong>
+                    </div>
+
+                    <div class="progresso">
+                        <div class="progresso-preenchido receita"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="meta">
+
+                    <div class="meta-topo">
+                        <span>Satisfação</span>
+                        <strong>94%</strong>
+                    </div>
+
+                    <div class="progresso">
+                        <div class="progresso-preenchido satisfacao"></div>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <section class="painel tabela-painel">
+
+            <div class="painel-topo">
+                <div>
+                    <h2>Resumo dos Indicadores</h2>
+                    <p>Visão geral do desempenho atual.</p>
+                </div>
+            </div>
+
+            <div class="tabela-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Indicador</th>
+                            <th>Resultado Atual</th>
+                            <th>Meta</th>
+                            <th>Variação</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Taxa de Conversão</td>
+                            <td>18,7%</td>
+                            <td>20%</td>
+                            <td class="positivo">+2,4%</td>
+                            <td><span class="status andamento">Em andamento</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Meta de Vendas</td>
+                            <td>82%</td>
+                            <td>100%</td>
+                            <td class="positivo">+7,5%</td>
+                            <td><span class="status andamento">Em andamento</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Clientes Ativos</td>
+                            <td>1.840</td>
+                            <td>1.700</td>
+                            <td class="positivo">+11,3%</td>
+                            <td><span class="status atingido">Atingido</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Satisfação</td>
+                            <td>94%</td>
+                            <td>90%</td>
+                            <td class="positivo">+1,8%</td>
+                            <td><span class="status atingido">Atingido</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
 
     </main>
 
