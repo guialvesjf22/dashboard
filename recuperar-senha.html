@@ -3,86 +3,148 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
     <title>Recuperar Senha - Smart Control</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
     <div class="pagina-recuperacao">
 
-        <div class="recuperacao-esquerda">
+
+        <!-- LADO ESQUERDO -->
+        <section class="recuperacao-esquerda">
 
             <img
                 src="assets/images/logo.png"
                 alt="Logo do sistema Smart Control"
                 class="logo-recuperacao">
 
-            <h1>SMART <span>CONTROL</span></h1>
+
+            <h1>
+                SMART <span>CONTROL</span>
+            </h1>
+
 
             <div class="linha-recuperacao"></div>
+
 
             <p>
                 Gestão inteligente,<br>
                 resultados reais.
             </p>
 
-        </div>
+        </section>
 
-        <div class="recuperacao-direita">
+
+
+        <!-- LADO DIREITO -->
+        <main class="recuperacao-direita">
+
 
             <div class="caixa-recuperacao">
 
-                <div class="cadeado">🔒</div>
 
-                <h2>Bem-Vindo!</h2>
+                <div class="cadeado">
+                    🔒
+                </div>
 
-                <h3>Recuperar senha</h3>
+
+                <h2>
+                    Recuperar Senha
+                </h2>
+
 
                 <p class="instrucao">
-                    Digite seu e-mail para receber o código de recuperação.
+                    Informe seu e-mail e o código de verificação
+                    para recuperar o acesso à sua conta.
                 </p>
 
-                <form action="index.html" method="get">
 
-                    <label for="email-recuperacao">E-mail</label>
+
+                <form
+                    action="index.html"
+                    method="get">
+
+
+                    <!-- E-MAIL -->
+                    <label for="email">
+                        E-mail
+                    </label>
+
 
                     <input
                         type="email"
-                        id="email-recuperacao"
+                        id="email"
                         name="email"
-                        placeholder="✉  seu@email.com"
+                        placeholder="seu@email.com"
                         required>
 
-                    <label for="codigo">Código</label>
+
+
+                    <!-- CÓDIGO -->
+                    <label for="codigo">
+                        Código de verificação
+                    </label>
+
 
                     <input
                         type="text"
                         id="codigo"
                         name="codigo"
-                        placeholder="🔒  Digite o código"
+                        placeholder="Digite o código de 6 números"
+                        minlength="6"
+                        maxlength="6"
+                        pattern="[0-9]{6}"
+                        inputmode="numeric"
+                        title="Digite exatamente 6 números"
                         required>
 
+
+
+                    <!-- LEMBRAR -->
                     <label class="lembrar-recuperacao">
+
                         <input type="checkbox">
-                        Lembrar de mim
+
+                        <span>
+                            Lembrar deste dispositivo
+                        </span>
+
                     </label>
 
+
+
+                    <!-- BOTÃO -->
                     <button type="submit">
-                        Enviar
+                        Recuperar Senha
                     </button>
 
                 </form>
 
-                <p class="voltar-login">
-                    <a href="index.html">Voltar ao Login</a>
-                </p>
+
+
+                <!-- VOLTAR -->
+                <a
+                    href="index.html"
+                    class="voltar-login">
+
+                    ← Voltar ao Login
+
+                </a>
+
 
             </div>
 
-        </div>
+        </main>
+
 
     </div>
 
