@@ -11,15 +11,10 @@ body {
 }
 
 
-/* PÁGINA PRINCIPAL */
-
 .pagina-cadastro {
     min-height: 100vh;
     display: flex;
 }
-
-
-/* LADO ESQUERDO */
 
 .lado-esquerdo {
     width: 42%;
@@ -66,8 +61,6 @@ body {
 }
 
 
-/* LADO DIREITO */
-
 .lado-direito {
     width: 58%;
 
@@ -112,9 +105,6 @@ body {
     margin-bottom: 28px;
 }
 
-
-/* CAMPOS */
-
 .campo {
     display: flex;
     flex-direction: column;
@@ -152,8 +142,6 @@ body {
 }
 
 
-/* TERMOS */
-
 .termos {
     display: flex;
     align-items: flex-start;
@@ -170,9 +158,6 @@ body {
 .termos input {
     margin-top: 2px;
 }
-
-
-/* BOTÃO */
 
 button {
     width: 100%;
@@ -195,9 +180,6 @@ button:hover {
     background-color: #1d4ed8;
 }
 
-
-/* VOLTAR AO LOGIN */
-
 .login {
     margin-top: 22px;
 
@@ -217,9 +199,6 @@ button:hover {
 .login a:hover {
     text-decoration: underline;
 }
-
-
-/* LOCALIZAÇÃO */
 
 .localizacao {
     background-color: #f8fafc;
@@ -247,9 +226,6 @@ button:hover {
     border: 0;
     border-radius: 8px;
 }
-
-
-/* RESPONSIVO */
 
 @media (max-width: 800px) {
 

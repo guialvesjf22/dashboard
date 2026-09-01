@@ -10,9 +10,6 @@ body {
     color: #111827;
 }
 
-
-/* MENU LATERAL */
-
 .menu-lateral {
     width: 220px;
     height: 100vh;
@@ -56,9 +53,6 @@ body {
     background-color: #1e293b;
     color: white;
 }
-
-
-/* PERFIL */
 
 .rodape-menu {
     position: absolute;
@@ -118,17 +112,11 @@ body {
     background-color: #475569;
 }
 
-
-/* CONTEÚDO */
-
 .conteudo {
     margin-left: 220px;
     min-height: 100vh;
     padding: 28px;
 }
-
-
-/* TOPO */
 
 .topo {
     margin-bottom: 28px;
@@ -144,17 +132,11 @@ body {
     color: #6b7280;
 }
 
-
-/* GRADE */
-
 .grade-configuracoes {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
-
-
-/* PAINEL */
 
 .painel {
     background-color: white;
@@ -193,9 +175,6 @@ body {
     font-size: 12px;
 }
 
-
-/* CAMPOS */
-
 .campo {
     display: flex;
     flex-direction: column;
@@ -225,9 +204,6 @@ body {
     border-color: #2563eb;
 }
 
-
-/* NOTIFICAÇÕES */
-
 .opcao {
     display: flex;
     justify-content: space-between;
@@ -245,9 +221,6 @@ body {
     color: #6b7280;
     font-size: 12px;
 }
-
-
-/* SWITCH */
 
 .switch {
     position: relative;
@@ -291,9 +264,6 @@ body {
     transform: translateX(22px);
 }
 
-
-/* SEGURANÇA */
-
 .botao-secundario {
     padding: 10px 15px;
     border: 1px solid #2563eb;
@@ -306,9 +276,6 @@ body {
 .botao-secundario:hover {
     background-color: #eff6ff;
 }
-
-
-/* SISTEMA */
 
 .informacao {
     display: flex;
@@ -326,9 +293,6 @@ body {
 .online {
     color: #059669;
 }
-
-
-/* BOTÕES FINAIS */
 
 .acoes {
     display: flex;
@@ -365,9 +329,6 @@ body {
     background-color: #1d4ed8;
 }
 
-
-/* RESPONSIVO */
-
 @media (max-width: 900px) {
 
     .grade-configuracoes {
@@ -388,8 +349,6 @@ body {
     }
 
 }
-
-/* TÍTULO PARA ACESSIBILIDADE */
 
 .titulo-oculto {
     position: absolute;

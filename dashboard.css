@@ -10,11 +10,6 @@ body {
     color: #111827;
 }
 
-
-/* =========================
-   MENU LATERAL
-   ========================= */
-
 .menu-lateral {
     width: 220px;
     min-height: 100vh;
@@ -62,22 +57,12 @@ body {
     color: white;
 }
 
-
-/* =========================
-   CONTEÚDO PRINCIPAL
-   ========================= */
-
 .conteudo-dashboard {
     margin-left: 220px;
     min-height: 100vh;
     padding: 28px;
     background-color: #f3f4f6;
 }
-
-
-/* =========================
-   TOPO
-   ========================= */
 
 .topo-dashboard {
     display: flex;
@@ -121,11 +106,6 @@ body {
 
     font-size: 14px;
 }
-
-
-/* =========================
-   CARDS
-   ========================= */
 
 .cards-dashboard {
     display: grid;
@@ -183,11 +163,6 @@ body {
     color: #ef4444;
 }
 
-
-/* =========================
-   ÁREA DOS GRÁFICOS
-   ========================= */
-
 .grade-graficos {
     display: grid;
 
@@ -234,11 +209,6 @@ body {
     border-radius: 5px;
 }
 
-
-/* =========================
-   GRÁFICO DE LINHA
-   ========================= */
-
 .grafico-linha {
     width: 100%;
 
@@ -268,11 +238,6 @@ body {
 .grafico-linha circle {
     fill: #2563eb;
 }
-
-
-/* =========================
-   GRÁFICO DE PIZZA
-   ========================= */
 
 .grafico-pizza-area {
     display: flex;
@@ -331,11 +296,6 @@ body {
     margin-left: 8px;
 }
 
-
-/* =========================
-   PARTE INFERIOR
-   ========================= */
-
 .grade-inferior {
     display: grid;
 
@@ -343,11 +303,6 @@ body {
 
     gap: 20px;
 }
-
-
-/* =========================
-   ATIVIDADES RECENTES
-   ========================= */
 
 .atividade {
     display: grid;
@@ -385,11 +340,6 @@ body {
     font-size: 11px;
 }
 
-
-/* =========================
-   TAREFAS
-   ========================= */
-
 .tarefa {
     display: grid;
 
@@ -425,11 +375,6 @@ body {
 
     color: #6b7280;
 }
-
-
-/* =========================
-   RESPONSIVO
-   ========================= */
 
 @media (max-width: 1100px) {
 
@@ -475,8 +420,6 @@ body {
         grid-template-columns: 1fr;
     }
 }
-
-/* RODAPÉ DO MENU */
 
 .rodape-menu {
     position: absolute;
@@ -549,8 +492,6 @@ cursor: pointer;
     background-color: #475569;
 }
 
-/* RELATÓRIO DE ACESSOS */
-
 .painel-acessos {
     margin-top: 20px;
 }
@@ -613,8 +554,6 @@ cursor: pointer;
     background-color: #e5e7eb;
     color: #4b5563;
 }
-
-/* TÍTULOS PARA ACESSIBILIDADE */
 
 .titulo-oculto {
     position: absolute;
