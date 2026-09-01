@@ -10,9 +10,6 @@ body {
     color: #111827;
 }
 
-
-/* MENU LATERAL */
-
 .menu-lateral {
     width: 220px;
     height: 100vh;
@@ -66,9 +63,6 @@ body {
     background-color: #1e293b;
     color: white;
 }
-
-
-/* PERFIL DA LATERAL */
 
 .rodape-menu {
     position: absolute;
@@ -147,9 +141,6 @@ body {
     background-color: #475569;
 }
 
-
-/* CONTEÚDO */
-
 .conteudo {
     margin-left: 220px;
 
@@ -157,9 +148,6 @@ body {
 
     padding: 28px;
 }
-
-
-/* TOPO */
 
 .topo {
     display: flex;
@@ -209,9 +197,6 @@ body {
 
     font-size: 14px;
 }
-
-
-/* CARDS */
 
 .cards {
     display: grid;
@@ -296,9 +281,6 @@ body {
     background-color: #fee2e2;
 }
 
-
-/* PAINEL */
-
 .painel {
     background-color: white;
 
@@ -346,9 +328,6 @@ body {
 .novo-usuario:hover {
     background-color: #1d4ed8;
 }
-
-
-/* FILTROS */
 
 .filtros {
     display: flex;
@@ -406,9 +385,6 @@ body {
     cursor: pointer;
 }
 
-
-/* TABELA */
-
 .tabela-container {
     overflow-x: auto;
 }
@@ -442,9 +418,6 @@ td {
 tbody tr:hover {
     background-color: #f8fafc;
 }
-
-
-/* USUÁRIO */
 
 .usuario-info {
     display: flex;
@@ -482,9 +455,6 @@ tbody tr:hover {
     font-weight: bold;
 }
 
-
-/* STATUS */
-
 .status {
     display: inline-block;
 
@@ -515,9 +485,6 @@ tbody tr:hover {
     color: #b91c1c;
 }
 
-
-/* BOTÃO DE AÇÃO */
-
 .acao {
     padding: 7px 11px;
 
@@ -535,9 +502,6 @@ tbody tr:hover {
 .acao:hover {
     background-color: #eff6ff;
 }
-
-
-/* RESPONSIVO */
 
 @media (max-width: 1050px) {
 
@@ -582,8 +546,6 @@ tbody tr:hover {
     }
 
 }
-
-/* TÍTULO PARA ACESSIBILIDADE */
 
 .titulo-oculto {
     position: absolute;

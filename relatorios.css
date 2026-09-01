@@ -10,9 +10,6 @@ body {
     color: #111827;
 }
 
-
-/* MENU LATERAL */
-
 .menu-lateral {
     width: 220px;
     height: 100vh;
@@ -64,9 +61,6 @@ body {
     background-color: #1e293b;
     color: white;
 }
-
-
-/* PERFIL */
 
 .rodape-menu {
     position: absolute;
@@ -142,9 +136,6 @@ body {
     background-color: #475569;
 }
 
-
-/* CONTEÚDO */
-
 .conteudo {
     margin-left: 220px;
 
@@ -152,9 +143,6 @@ body {
 
     min-height: 100vh;
 }
-
-
-/* TOPO */
 
 .topo {
     display: flex;
@@ -205,9 +193,6 @@ body {
     font-size: 14px;
 }
 
-
-/* CARDS */
-
 .cards {
     display: grid;
 
@@ -247,9 +232,6 @@ body {
 .card h2 {
     font-size: 24px;
 }
-
-
-/* PAINEL */
 
 .painel {
     background-color: white;
@@ -298,9 +280,6 @@ body {
 .painel-topo button:hover {
     background-color: #1d4ed8;
 }
-
-
-/* FILTROS */
 
 .filtros {
     display: flex;
@@ -358,9 +337,6 @@ body {
     cursor: pointer;
 }
 
-
-/* TABELA */
-
 .tabela-container {
     overflow-x: auto;
 }
@@ -395,9 +371,6 @@ tbody tr:hover {
     background-color: #f8fafc;
 }
 
-
-/* STATUS */
-
 .status {
     display: inline-block;
 
@@ -421,9 +394,6 @@ tbody tr:hover {
 
     background-color: #fef3c7;
 }
-
-
-/* RESPONSIVO */
 
 @media (max-width: 1000px) {
 
@@ -473,9 +443,6 @@ tbody tr:hover {
     }
 
 }
-
-
-/* TÍTULO PARA ACESSIBILIDADE */
 
 .titulo-oculto {
     position: absolute;

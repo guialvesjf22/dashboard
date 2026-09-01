@@ -10,9 +10,6 @@ body {
     color: #111827;
 }
 
-
-/* MENU */
-
 .menu-lateral {
     width: 220px;
     height: 100vh;
@@ -56,9 +53,6 @@ body {
     background-color: #1e293b;
     color: white;
 }
-
-
-/* PERFIL */
 
 .rodape-menu {
     position: absolute;
@@ -118,17 +112,11 @@ body {
     background-color: #475569;
 }
 
-
-/* CONTEÚDO */
-
 .conteudo {
     margin-left: 220px;
     min-height: 100vh;
     padding: 28px;
 }
-
-
-/* TOPO */
 
 .topo {
     display: flex;
@@ -164,9 +152,6 @@ body {
     outline: none;
     font-size: 14px;
 }
-
-
-/* CARDS */
 
 .cards {
     display: grid;
@@ -234,9 +219,6 @@ body {
     color: #dc2626 !important;
 }
 
-
-/* PAINÉIS */
-
 .grade-principal {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -274,9 +256,6 @@ body {
     border-radius: 5px;
     background-color: white;
 }
-
-
-/* GRÁFICO */
 
 .grafico {
     height: 280px;
@@ -347,9 +326,6 @@ body {
     background-color: #f97316;
 }
 
-
-/* RESUMO */
-
 .resumo h2 {
     margin-bottom: 25px;
 }
@@ -384,9 +360,6 @@ body {
     color: #1d4ed8;
 }
 
-
-/* BOTÃO */
-
 .nova-movimentacao {
     padding: 11px 16px;
     border: none;
@@ -400,9 +373,6 @@ body {
     background-color: #1d4ed8;
 }
 
-
-/* FILTROS */
-
 .filtros {
     display: flex;
     gap: 12px;
@@ -415,9 +385,6 @@ body {
     border-radius: 5px;
     background-color: white;
 }
-
-
-/* TABELA */
 
 .tabela-container {
     overflow-x: auto;
@@ -445,9 +412,6 @@ td {
 tbody tr:hover {
     background-color: #f8fafc;
 }
-
-
-/* ENTRADA E SAÍDA */
 
 .tipo,
 .status {
@@ -488,9 +452,6 @@ tbody tr:hover {
     background-color: #fef3c7;
 }
 
-
-/* RESPONSIVO */
-
 @media (max-width: 1050px) {
 
     .cards {
@@ -529,8 +490,6 @@ tbody tr:hover {
     }
 
 }
-
-/* TÍTULOS PARA ACESSIBILIDADE */
 
 .titulo-oculto {
     position: absolute;

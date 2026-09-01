@@ -15,8 +15,6 @@ body {
     display: flex;
 }
 
-/* LADO ESQUERDO */
-
 .lado-esquerdo {
     width: 35%;
     min-height: 100vh;
@@ -43,8 +41,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* CONTROL continua azul */
-
 .lado-esquerdo h1 span {
     color: #1769ff;
 }
@@ -60,8 +56,6 @@ body {
     font-size: 16px;
     line-height: 1.6;
 }
-
-/* LADO DIREITO */
 
 .lado-direito {
     width: 65%;
@@ -166,17 +160,11 @@ body {
     color: #1769ff;
 }
 
-/* =========================
-   RECUPERAÇÃO DE SENHA
-   ========================= */
-
 .pagina-recuperacao {
     width: 100%;
     min-height: 100vh;
     display: flex;
 }
-
-/* LADO ESQUERDO */
 
 .recuperacao-esquerda {
     width: 35%;
@@ -220,8 +208,6 @@ body {
     line-height: 1.6;
 }
 
-/* LADO DIREITO */
-
 .recuperacao-direita {
     width: 65%;
     min-height: 100vh;
@@ -257,8 +243,6 @@ body {
     text-align: left;
 }
 
-/* FORMULÁRIO */
-
 .caixa-recuperacao form {
     display: flex;
     flex-direction: column;
@@ -288,8 +272,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* BOTÃO */
-
 .caixa-recuperacao button {
     width: 100%;
 
@@ -307,8 +289,6 @@ body {
 .caixa-recuperacao button:hover {
     background-color: #1755d7;
 }
-
-/* VOLTAR */
 
 .voltar-login {
     margin-top: 20px;

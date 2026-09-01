@@ -10,9 +10,6 @@ body {
     color: #111827;
 }
 
-
-/* MENU LATERAL */
-
 .menu-lateral {
     width: 220px;
     height: 100vh;
@@ -65,9 +62,6 @@ body {
     background-color: #1e293b;
     color: white;
 }
-
-
-/* PERFIL DA LATERAL */
 
 .rodape-menu {
     position: absolute;
@@ -146,10 +140,6 @@ body {
 .sair-menu:hover {
     background-color: #475569;
 }
-
-
-/* CONTEÚDO */
-
 .conteudo {
     margin-left: 220px;
 
@@ -157,9 +147,6 @@ body {
 
     padding: 28px;
 }
-
-
-/* TOPO */
 
 .topo {
     margin-bottom: 28px;
@@ -177,9 +164,6 @@ body {
     color: #6b7280;
 }
 
-
-/* PERFIL PRINCIPAL */
-
 .perfil-principal {
     display: grid;
 
@@ -189,9 +173,6 @@ body {
 
     margin-bottom: 20px;
 }
-
-
-/* CARTÃO DO PERFIL */
 
 .cartao-perfil {
     background-color: white;
@@ -276,9 +257,6 @@ body {
     font-size: 14px;
 }
 
-
-/* PAINEL */
-
 .painel {
     background-color: white;
 
@@ -308,9 +286,6 @@ body {
 
     font-size: 13px;
 }
-
-
-/* FORMULÁRIO */
 
 .linha-formulario {
     display: grid;
@@ -368,9 +343,6 @@ body {
     border-color: #2563eb;
 }
 
-
-/* BOTÕES */
-
 .acoes {
     display: flex;
 
@@ -415,9 +387,6 @@ body {
 .salvar:hover {
     background-color: #1d4ed8;
 }
-
-
-/* SEGURANÇA */
 
 .painel-seguranca {
     margin-bottom: 20px;
@@ -479,9 +448,6 @@ body {
     font-weight: bold;
 }
 
-
-/* RESPONSIVO */
-
 @media (max-width: 950px) {
 
     .perfil-principal {
@@ -507,8 +473,6 @@ body {
     }
 
 }
-
-/* TÍTULO PARA ACESSIBILIDADE */
 
 .titulo-oculto {
     position: absolute;

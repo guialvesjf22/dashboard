@@ -10,9 +10,6 @@ body {
     color: #111827;
 }
 
-
-/* MENU LATERAL */
-
 .menu-lateral {
     width: 220px;
     height: 100vh;
@@ -66,9 +63,6 @@ body {
     background-color: #1e293b;
     color: white;
 }
-
-
-/* PERFIL */
 
 .rodape-menu {
     position: absolute;
@@ -146,9 +140,6 @@ body {
     background-color: #475569;
 }
 
-
-/* CONTEÚDO */
-
 .conteudo {
     margin-left: 220px;
 
@@ -156,9 +147,6 @@ body {
 
     min-height: 100vh;
 }
-
-
-/* TOPO */
 
 .topo {
     display: flex;
@@ -208,9 +196,6 @@ body {
 
     font-size: 14px;
 }
-
-
-/* CARDS */
 
 .cards {
     display: grid;
@@ -289,9 +274,6 @@ body {
     color: #059669;
 }
 
-
-/* PAINÉIS */
-
 .grade-principal {
     display: grid;
 
@@ -341,9 +323,6 @@ body {
 
     background-color: white;
 }
-
-
-/* GRÁFICO DE BARRAS */
 
 .grafico-barras {
     height: 280px;
@@ -396,9 +375,6 @@ body {
 
     font-size: 12px;
 }
-
-
-/* METAS */
 
 .meta {
     margin-bottom: 28px;
@@ -456,9 +432,6 @@ body {
     background-color: #f59e0b;
 }
 
-
-/* TABELA */
-
 .tabela-painel {
     margin-bottom: 20px;
 }
@@ -497,9 +470,6 @@ tbody tr:hover {
     background-color: #f8fafc;
 }
 
-
-/* STATUS */
-
 .status {
     display: inline-block;
 
@@ -523,9 +493,6 @@ tbody tr:hover {
 
     background-color: #dbeafe;
 }
-
-
-/* RESPONSIVO */
 
 @media (max-width: 1050px) {
 
@@ -568,8 +535,6 @@ tbody tr:hover {
     }
 
 }
-
-/* TÍTULOS PARA ACESSIBILIDADE */
 
 .titulo-oculto {
     position: absolute;
