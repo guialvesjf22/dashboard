@@ -568,10 +568,24 @@ cursor: pointer;
 }
 
 .dark-theme {
-background-color: black !important;
-color: white !important;
+background-color: #121212;
+color: white;
 }
 
-.dark-theme .cards-dashboard {
-background-color: #333 !important;
+.dark-theme .topo-dashboard,
+.dark-theme .cards-dashboard,
+.dark-theme .card,
+.dark-theme section,
+.dark-theme table {
+background-color: #1e1e1e;
+color: white;
+}
+
+.dark-theme input {
+background-color: #333;
+color: white;
+}
+
+.dark-theme a {
+color: white;
 }
