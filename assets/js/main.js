@@ -14,6 +14,7 @@ const botaoTema = document.querySelector("#tema");
 
 if (botaoTema) {
 botaoTema.addEventListener("click", () => {
+alert("cliquei");
 document.body.classList.toggle("dark-theme");
 });
 }
