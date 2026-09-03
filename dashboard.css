@@ -567,25 +567,26 @@ cursor: pointer;
     border: 0;
 }
 
-.dark-theme {
-background-color: #121212;
+body.dark-theme {
+background: #121212;
 color: white;
 }
 
-.dark-theme .topo-dashboard,
-.dark-theme .cards-dashboard,
-.dark-theme .card,
-.dark-theme section,
-.dark-theme table {
-background-color: #1e1e1e;
-color: white;
+body.dark-theme .cards-dashboard,
+body.dark-theme .card,
+body.dark-theme .grafico,
+body.dark-theme .tabela,
+body.dark-theme main {
+background: #1e1e1e !important;
+color: white !important;
 }
 
-.dark-theme input {
-background-color: #333;
-color: white;
-}
-
-.dark-theme a {
-color: white;
+body.dark-theme p,
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme span,
+body.dark-theme td,
+body.dark-theme th {
+color: white !important;
 }
