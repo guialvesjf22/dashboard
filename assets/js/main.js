@@ -9,3 +9,11 @@ mensagem.innerHTML = `Olá, ${nome}! Hoje é ${data.toLocaleDateString()} às ${
 }
 
 console.log("Sistema carregado");
+
+const botaoTema = document.querySelector("#tema");
+
+if (botaoTema) {
+botaoTema.addEventListener("click", () => {
+document.body.classList.toggle("dark-theme");
+});
+}
